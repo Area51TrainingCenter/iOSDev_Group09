@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *cajaUno;
+@property (weak, nonatomic) IBOutlet UITextField *cajaDos;
+- (IBAction)colorAzul:(id)sender;
+- (IBAction)colorRojo:(id)sender;
+- (IBAction)colorVerde:(id)sender;
 
 @end
