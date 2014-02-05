@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="158" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Hijo View Controller-->
         <scene sceneID="9GI-Bx-eJl">
             <objects>
-                <viewController id="m8X-WL-j1W" sceneMemberID="viewController">
+                <viewController id="m8X-WL-j1W" customClass="HijoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Se-h2-cQi"/>
                         <viewControllerLayoutGuide type="bottom" id="ptB-W2-hY5"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800D5C3818A1BEA3008B0E49 /* HijoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D5C3718A1BEA3008B0E49 /* HijoViewController.m */; };
 		80D7720818A1B63800C364CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D7720718A1B63800C364CC /* Foundation.framework */; };
 		80D7720A18A1B63800C364CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D7720918A1B63800C364CC /* CoreGraphics.framework */; };
 		80D7720C18A1B63800C364CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D7720B18A1B63800C364CC /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		800D5C3618A1BEA3008B0E49 /* HijoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HijoViewController.h; sourceTree = "<group>"; };
+		800D5C3718A1BEA3008B0E49 /* HijoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HijoViewController.m; sourceTree = "<group>"; };
 		80D7720418A1B63800C364CC /* EjercicioPD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjercicioPD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D7720718A1B63800C364CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80D7720918A1B63800C364CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				80D7721D18A1B63800C364CC /* ViewController.m */,
 				80D7721F18A1B63800C364CC /* Images.xcassets */,
 				80D7720E18A1B63800C364CC /* Supporting Files */,
+				800D5C3618A1BEA3008B0E49 /* HijoViewController.h */,
+				800D5C3718A1BEA3008B0E49 /* HijoViewController.m */,
 			);
 			path = EjercicioPD;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800D5C3818A1BEA3008B0E49 /* HijoViewController.m in Sources */,
 				80D7721E18A1B63800C364CC /* ViewController.m in Sources */,
 				80D7721818A1B63800C364CC /* AppDelegate.m in Sources */,
 				80D7721418A1B63800C364CC /* main.m in Sources */,
@@ -460,6 +466,7 @@
 				80D7723818A1B63900C364CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D7723918A1B63900C364CC /* Build configuration list for PBXNativeTarget "EjercicioPDTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				80D7723B18A1B63900C364CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
