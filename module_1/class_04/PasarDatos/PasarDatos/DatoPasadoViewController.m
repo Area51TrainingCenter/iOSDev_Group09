@@ -8,6 +8,7 @@
 
 #import "DatoPasadoViewController.h"
 
+
 @interface DatoPasadoViewController ()
 
 @end
@@ -23,6 +24,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.cadenaConcatenadaAMostrar.text = self.datoPasado;
 	// Do any additional setup after loading the view.
 }
 - (void)didReceiveMemoryWarning{

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DatoPasadoViewController.h"
 
 @interface ViewController ()
 
@@ -23,8 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    [NSString stringWithFormat:@"%@ %@",self.cajaUno.text, self.cajaDos.text];
+    DatoPasadoViewController *o = segue.destinationViewController;
+    o.datoPasado = [NSString stringWithFormat:@"%@ %@",self.cajaUno.text, self.cajaDos.text];
 }
 
 @end

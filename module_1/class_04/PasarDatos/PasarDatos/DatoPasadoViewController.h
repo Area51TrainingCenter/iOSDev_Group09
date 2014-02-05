@@ -10,5 +10,5 @@
 
 @interface DatoPasadoViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *cadenaConcatenadaAMostrar;
-
+@property (nonatomic, strong) NSString *datoPasado;
 @end
