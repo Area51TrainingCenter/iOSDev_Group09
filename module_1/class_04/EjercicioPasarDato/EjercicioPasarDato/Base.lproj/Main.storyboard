@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="180" y="74"/>
         </scene>
-        <!--View Controller-->
+        <!--Izquierda View Controller-->
         <scene sceneID="yZh-sT-XcW">
             <objects>
-                <viewController id="8C7-Yh-cgo" sceneMemberID="viewController">
+                <viewController id="8C7-Yh-cgo" customClass="IzquierdaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n1k-KN-Ura"/>
                         <viewControllerLayoutGuide type="bottom" id="ZjS-n8-dW8"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="785" y="356"/>
         </scene>
-        <!--View Controller-->
+        <!--Derecha View Controller-->
         <scene sceneID="5JM-Y8-jgb">
             <objects>
-                <viewController id="fgd-4t-bKb" sceneMemberID="viewController">
+                <viewController id="fgd-4t-bKb" customClass="DerechaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zcM-Nl-E4H"/>
                         <viewControllerLayoutGuide type="bottom" id="g7e-nP-hQF"/>
