@@ -24,5 +24,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    HijoViewController *h = segue.destinationViewController;
+    //Paso 7
+    h.midelegado = self;
+}
+
+
+#pragma mark -
+#pragma mark HijoViewController Delegate Method
+//Paso 6
+- (void)pasarColorAlPapa:(UIColor *)color{
+    self.view.backgroundColor = color;
+}
 
 @end
