@@ -17,5 +17,7 @@
 - (IBAction)colorAzul:(id)sender;
 - (IBAction)colorVerde:(id)sender;
 - (IBAction)colorNegro:(id)sender;
+//Paso 2
+@property (nonatomic, strong) id<MiProtocolo>midelegado;
 
 @end
