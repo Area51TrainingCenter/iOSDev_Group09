@@ -36,14 +36,19 @@
 }
 
 - (IBAction)colorRojo:(id)sender {
+    //Paso 3
+    [self.midelegado pasarColorAlPapa:[UIColor redColor]];
 }
-
 - (IBAction)colorAzul:(id)sender {
+    //Paso 3
+    [self.midelegado pasarColorAlPapa:[UIColor blueColor]];
 }
-
 - (IBAction)colorVerde:(id)sender {
+    //Paso 3
+    [self.midelegado pasarColorAlPapa:[UIColor greenColor]];
 }
-
 - (IBAction)colorNegro:(id)sender {
+    //Paso 3
+    [self.midelegado pasarColorAlPapa:[UIColor blackColor]];
 }
 @end
