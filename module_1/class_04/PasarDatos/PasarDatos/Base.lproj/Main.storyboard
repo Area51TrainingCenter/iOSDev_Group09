@@ -38,15 +38,19 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cajaDos" destination="EN6-Hf-OQ1" id="5Ju-uS-IcC"/>
+                        <outlet property="cajaUno" destination="FWD-tb-U1O" id="zbg-Mg-LKR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="216" y="38"/>
         </scene>
-        <!--View Controller-->
+        <!--Dato Pasado View Controller-->
         <scene sceneID="yU9-ta-JXe">
             <objects>
-                <viewController id="QtJ-T2-MD4" sceneMemberID="viewController">
+                <viewController id="QtJ-T2-MD4" customClass="DatoPasadoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dfp-4x-DBM"/>
                         <viewControllerLayoutGuide type="bottom" id="yjz-H8-3Lf"/>
@@ -66,6 +70,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cPt-sd-Rgo"/>
+                    <connections>
+                        <outlet property="cadenaConcatenadaAMostrar" destination="Iba-cL-uTR" id="uQ4-2P-wVq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHZ-2Y-H8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
