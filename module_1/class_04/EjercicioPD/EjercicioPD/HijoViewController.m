@@ -35,4 +35,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)colorRojo:(id)sender {
+}
+
+- (IBAction)colorAzul:(id)sender {
+}
+
+- (IBAction)colorVerde:(id)sender {
+}
+
+- (IBAction)colorNegro:(id)sender {
+}
 @end

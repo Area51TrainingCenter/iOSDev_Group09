@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HijoViewController : UIViewController
+- (IBAction)colorRojo:(id)sender;
+- (IBAction)colorAzul:(id)sender;
+- (IBAction)colorVerde:(id)sender;
+- (IBAction)colorNegro:(id)sender;
 
 @end

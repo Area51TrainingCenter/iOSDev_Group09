@@ -27,7 +27,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="120"/>
+            <point key="canvasLocation" x="230" y="-466"/>
         </scene>
         <!--Hijo View Controller-->
         <scene sceneID="9GI-Bx-eJl">
@@ -48,6 +48,9 @@
                                     <color key="titleColor" red="0.65098039220000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorRojo:" destination="m8X-WL-j1W" eventType="touchUpInside" id="kKK-3X-1ou"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEc-gD-lHU">
                                 <rect key="frame" x="184" y="163" width="30" height="30"/>
@@ -55,6 +58,9 @@
                                 <state key="normal" title="Azul">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorAzul:" destination="m8X-WL-j1W" eventType="touchUpInside" id="DlE-E7-xQf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX4-tz-5Xi">
                                 <rect key="frame" x="59" y="236" width="39" height="30"/>
@@ -63,6 +69,9 @@
                                     <color key="titleColor" red="0.42256030589999999" green="0.89268427309999998" blue="0.44032137259999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorVerde:" destination="m8X-WL-j1W" eventType="touchUpInside" id="UNF-7M-JK8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zod-oM-1VM">
                                 <rect key="frame" x="184" y="236" width="42" height="30"/>
@@ -71,6 +80,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorNegro:" destination="m8X-WL-j1W" eventType="touchUpInside" id="BFA-Te-M6O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -79,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Rk-y4-Pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="120"/>
+            <point key="canvasLocation" x="614" y="-466"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4HE-7M-6rm">
@@ -97,7 +109,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2Q-Uu-rgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202" y="120"/>
+            <point key="canvasLocation" x="-130" y="-466"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
