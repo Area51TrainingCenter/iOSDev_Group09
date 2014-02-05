@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.resultado.text = self.resultadoCalculo;
+    self.view.backgroundColor = self.colorElegido;
 	// Do any additional setup after loading the view.
 }
 

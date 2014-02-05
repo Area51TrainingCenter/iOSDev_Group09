@@ -91,6 +91,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="WDv-t2-9ia"/>
+                    <connections>
+                        <outlet property="resultado" destination="cBz-d9-cBi" id="tAm-rn-wID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjK-gF-PVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,6 +122,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uf9-q7-RRK"/>
+                    <connections>
+                        <outlet property="resultado" destination="Zf7-3V-Zd5" id="CKb-I2-z3N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tlv-V6-gt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

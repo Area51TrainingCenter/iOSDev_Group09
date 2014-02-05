@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface IzquierdaViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *resultado;
+@property (nonatomic, strong) NSString *resultadoCalculo;
+@property (nonatomic, strong) UIColor *colorElegido;
 @end
