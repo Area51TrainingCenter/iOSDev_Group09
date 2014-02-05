@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+//Paso 4
+#import "HijoViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<MiProtocolo>//Paso 5
 
 @end
