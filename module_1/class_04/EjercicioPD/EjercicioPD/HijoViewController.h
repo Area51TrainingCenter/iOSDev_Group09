@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+//Paso 1
+@protocol MiProtocolo <NSObject>
+- (void)pasarColorAlPapa:(UIColor *)color;
+@end
 
 @interface HijoViewController : UIViewController
 - (IBAction)colorRojo:(id)sender;
