@@ -38,17 +38,21 @@
 - (IBAction)colorRojo:(id)sender {
     //Paso 3
     [self.midelegado pasarColorAlPapa:[UIColor redColor]];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)colorAzul:(id)sender {
     //Paso 3
     [self.midelegado pasarColorAlPapa:[UIColor blueColor]];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)colorVerde:(id)sender {
     //Paso 3
     [self.midelegado pasarColorAlPapa:[UIColor greenColor]];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)colorNegro:(id)sender {
     //Paso 3
     [self.midelegado pasarColorAlPapa:[UIColor blackColor]];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end
