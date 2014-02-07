@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) NSArray *miarreglo;
 @end
 
 @implementation ViewController
@@ -33,6 +33,8 @@
     NSDictionary *d2 = [NSDictionary dictionaryWithObjectsAndKeys:@"Manzana", @"Nombre", @"5", @"Precio", nil];
     //NSLog(@"%@ %@",d1, d2);
     
+    self.miarreglo = [NSArray arrayWithObjects:d1, d2, nil];
+    
     NSLog(@"%@",[NSArray arrayWithObjects:d1, d2, nil]);
     
 }
@@ -45,7 +47,7 @@
 #pragma mark -
 #pragma mark PickerView Data Source Methods
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return 15;
+    return [self.miarreglo count];
 }
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
@@ -54,11 +56,11 @@
 #pragma mark -
 #pragma mark PickerView Delegate Methods
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return @"Area51";
+    NSDictionary *item = [self.miarreglo objectAtIndex:row];
+    return [item objectForKey:@"Nombre"];
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    
-    self.miCaja.text = @"Area51";
+    self.miCaja.text = [[self.miarreglo objectAtIndex:row] objectForKey:@"Nombre"];
 }
 
 @end
