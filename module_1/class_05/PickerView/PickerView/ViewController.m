@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@""]];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     /*
     NSMutableDictionary *primerDiccionario = [[NSMutableDictionary alloc] init];
