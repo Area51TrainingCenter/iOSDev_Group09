@@ -40,6 +40,7 @@
 }
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
+    self.miCaja.text = @"Area51";
 }
 
 @end
