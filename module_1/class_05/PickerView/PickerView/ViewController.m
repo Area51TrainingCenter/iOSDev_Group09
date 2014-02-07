@@ -17,6 +17,24 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    /*
+    NSMutableDictionary *primerDiccionario = [[NSMutableDictionary alloc] init];
+    [primerDiccionario setValue:@"Fresa" forKey:@"Nombre"];
+    [primerDiccionario setValue:@"12" forKey:@"Precio"];
+    NSLog(@"%@",primerDiccionario);
+    
+    NSMutableDictionary *segundoDiccionario = [[NSMutableDictionary alloc] init];
+    [segundoDiccionario setValue:@"Manzana" forKey:@"Nombre"];
+    [segundoDiccionario setValue:@"5" forKey:@"Precio"];
+    NSLog(@"%@",segundoDiccionario);*/
+    
+    NSDictionary *d1 = [NSDictionary dictionaryWithObjectsAndKeys:@"Fresa", @"Nombre", @"12", @"Precio", nil];
+    
+    NSDictionary *d2 = [NSDictionary dictionaryWithObjectsAndKeys:@"Manzana", @"Nombre", @"5", @"Precio", nil];
+    //NSLog(@"%@ %@",d1, d2);
+    
+    NSLog(@"%@",[NSArray arrayWithObjects:d1, d2, nil]);
+    
 }
 
 - (void)didReceiveMemoryWarning{
