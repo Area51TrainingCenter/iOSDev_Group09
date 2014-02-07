@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0D46A2A3-D8C2-487F-A8B9-85B8502EF218</string>
+	<string>6D1B66AB-9C1A-4973-881E-2A11F0DEE06C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PickerView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>36B87AC0-4F96-4F4B-BF46-4904A28B805D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOSDev_Group09</string>
+			<string>PickerView</string>
 		</dict>
 	</array>
 </dict>
