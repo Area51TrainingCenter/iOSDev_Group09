@@ -25,5 +25,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UINavigationController *nav = segue.destinationViewController;
+    TablaViewController *t = (TablaViewController *)nav.topViewController;
+    //Paso 7
+    t.delegate=self;
+}
+
+//Paso 6
+- (void)pasardato:(NSString *)dato{
+    self.mostrarLabel.text = dato;
+}
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+//Paso 4
+#import "TablaViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<TablaViewControllerDelegate> //Paso 5
+@property (weak, nonatomic) IBOutlet UILabel *mostrarLabel;
 
 @end
