@@ -122,7 +122,7 @@
 }
 
 - (IBAction)guardar:(id)sender {
-    [NSString stringWithFormat:@"%@ %@ %@",self.cajaUno.text, self.cajaDos.text, self.caja3.text];
+    [self.delegate pasardato:[NSString stringWithFormat:@"%@ %@ %@",self.cajaUno.text, self.cajaDos.text, self.caja3.text]];
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
