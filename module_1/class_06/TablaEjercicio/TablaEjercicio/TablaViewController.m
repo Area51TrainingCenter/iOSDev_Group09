@@ -117,4 +117,9 @@
 
  */
 
+- (IBAction)cerrar:(id)sender {
+}
+
+- (IBAction)guardar:(id)sender {
+}
 @end

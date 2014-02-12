@@ -130,9 +130,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Dbt-PU-emC">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="3Ev-pj-AUU"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="26Y-TA-3gA"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="3Ev-pj-AUU">
+                            <connections>
+                                <action selector="cerrar:" destination="5Np-b1-vg8" id="Sx5-h6-Phh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="26Y-TA-3gA">
+                            <connections>
+                                <action selector="guardar:" destination="5Np-b1-vg8" id="F3U-Tl-UZt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="caja3" destination="mp6-4f-SOp" id="XVR-xm-xlN"/>
+                        <outlet property="cajaDos" destination="fp5-I1-ptq" id="GiE-8a-PVe"/>
+                        <outlet property="cajaUno" destination="WKF-rP-0jf" id="bGY-hF-Xhh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMG-4f-k0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

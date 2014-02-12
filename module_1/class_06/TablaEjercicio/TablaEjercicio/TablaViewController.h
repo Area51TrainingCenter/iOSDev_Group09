@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TablaViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextField *cajaUno;
+@property (weak, nonatomic) IBOutlet UITextField *cajaDos;
+@property (weak, nonatomic) IBOutlet UITextField *caja3;
+- (IBAction)cerrar:(id)sender;
+- (IBAction)guardar:(id)sender;
 
 @end
