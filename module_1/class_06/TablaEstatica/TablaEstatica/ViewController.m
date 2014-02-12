@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  Image
+//  TablaEstatica
 //
-//  Created by Franti Saúl Huamán Mera on 2/6/14.
+//  Created by Franti Saúl Huamán Mera on 2/11/14.
 //  Copyright (c) 2014 Franti Saúl Huamán Mera. All rights reserved.
 //
 
@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Back2"]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

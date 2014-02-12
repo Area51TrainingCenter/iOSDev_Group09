@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4AB2AA6E-E602-4CEF-B794-CE73CFD9F141</string>
+	<string>4EDFC07D-A210-4402-982A-AFF028F79462</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Image</string>
+	<string>TablaEstatica</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>36B87AC0-4F96-4F4B-BF46-4904A28B805D</key>
+		<key>9270EC49-AB95-44FD-9A5E-594CAB4D8956</key>
 		<string>https://github.com/Area51TrainingCenter/iOSDev_Group09.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>module_1/class_05/Image/Image.xcodeproj/project.xcworkspace</string>
+	<string>module_1/class_06/TablaEstatica/TablaEstatica.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>36B87AC0-4F96-4F4B-BF46-4904A28B805D</key>
+		<key>9270EC49-AB95-44FD-9A5E-594CAB4D8956</key>
 		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>36B87AC0-4F96-4F4B-BF46-4904A28B805D</string>
+	<string>9270EC49-AB95-44FD-9A5E-594CAB4D8956</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>36B87AC0-4F96-4F4B-BF46-4904A28B805D</string>
+			<string>9270EC49-AB95-44FD-9A5E-594CAB4D8956</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Image</string>
+			<string>iOSDev_Group09</string>
 		</dict>
 	</array>
 </dict>

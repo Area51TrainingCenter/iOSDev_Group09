@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		808AA0C018AB045F00CC50FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA0BF18AB045F00CC50FA /* Foundation.framework */; };
+		808AA0C218AB045F00CC50FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA0C118AB045F00CC50FA /* CoreGraphics.framework */; };
+		808AA0C418AB045F00CC50FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA0C318AB045F00CC50FA /* UIKit.framework */; };
+		808AA0CA18AB045F00CC50FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808AA0C818AB045F00CC50FA /* InfoPlist.strings */; };
+		808AA0CC18AB045F00CC50FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA0CB18AB045F00CC50FA /* main.m */; };
+		808AA0D018AB045F00CC50FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA0CF18AB045F00CC50FA /* AppDelegate.m */; };
+		808AA0D318AB045F00CC50FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808AA0D118AB045F00CC50FA /* Main.storyboard */; };
+		808AA0D618AB045F00CC50FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA0D518AB045F00CC50FA /* ViewController.m */; };
+		808AA0D818AB045F00CC50FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808AA0D718AB045F00CC50FA /* Images.xcassets */; };
+		808AA0DF18AB045F00CC50FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA0DE18AB045F00CC50FA /* XCTest.framework */; };
+		808AA0E018AB045F00CC50FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA0BF18AB045F00CC50FA /* Foundation.framework */; };
+		808AA0E118AB045F00CC50FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA0C318AB045F00CC50FA /* UIKit.framework */; };
+		808AA0E918AB045F00CC50FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808AA0E718AB045F00CC50FA /* InfoPlist.strings */; };
+		808AA0EB18AB045F00CC50FA /* TablaEstaticaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA0EA18AB045F00CC50FA /* TablaEstaticaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		808AA0E218AB045F00CC50FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808AA0B418AB045F00CC50FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808AA0BB18AB045F00CC50FA;
+			remoteInfo = TablaEstatica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		808AA0BC18AB045F00CC50FA /* TablaEstatica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablaEstatica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		808AA0BF18AB045F00CC50FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		808AA0C118AB045F00CC50FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		808AA0C318AB045F00CC50FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		808AA0C718AB045F00CC50FA /* TablaEstatica-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TablaEstatica-Info.plist"; sourceTree = "<group>"; };
+		808AA0C918AB045F00CC50FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		808AA0CB18AB045F00CC50FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		808AA0CD18AB045F00CC50FA /* TablaEstatica-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TablaEstatica-Prefix.pch"; sourceTree = "<group>"; };
+		808AA0CE18AB045F00CC50FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		808AA0CF18AB045F00CC50FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		808AA0D218AB045F00CC50FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		808AA0D418AB045F00CC50FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		808AA0D518AB045F00CC50FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		808AA0D718AB045F00CC50FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		808AA0DD18AB045F00CC50FA /* TablaEstaticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablaEstaticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		808AA0DE18AB045F00CC50FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		808AA0E618AB045F00CC50FA /* TablaEstaticaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TablaEstaticaTests-Info.plist"; sourceTree = "<group>"; };
+		808AA0E818AB045F00CC50FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		808AA0EA18AB045F00CC50FA /* TablaEstaticaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TablaEstaticaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808AA0B918AB045F00CC50FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AA0C218AB045F00CC50FA /* CoreGraphics.framework in Frameworks */,
+				808AA0C418AB045F00CC50FA /* UIKit.framework in Frameworks */,
+				808AA0C018AB045F00CC50FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AA0DA18AB045F00CC50FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AA0DF18AB045F00CC50FA /* XCTest.framework in Frameworks */,
+				808AA0E118AB045F00CC50FA /* UIKit.framework in Frameworks */,
+				808AA0E018AB045F00CC50FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		808AA0B318AB045F00CC50FA = {
+			isa = PBXGroup;
+			children = (
+				808AA0C518AB045F00CC50FA /* TablaEstatica */,
+				808AA0E418AB045F00CC50FA /* TablaEstaticaTests */,
+				808AA0BE18AB045F00CC50FA /* Frameworks */,
+				808AA0BD18AB045F00CC50FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808AA0BD18AB045F00CC50FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808AA0BC18AB045F00CC50FA /* TablaEstatica.app */,
+				808AA0DD18AB045F00CC50FA /* TablaEstaticaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808AA0BE18AB045F00CC50FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				808AA0BF18AB045F00CC50FA /* Foundation.framework */,
+				808AA0C118AB045F00CC50FA /* CoreGraphics.framework */,
+				808AA0C318AB045F00CC50FA /* UIKit.framework */,
+				808AA0DE18AB045F00CC50FA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		808AA0C518AB045F00CC50FA /* TablaEstatica */ = {
+			isa = PBXGroup;
+			children = (
+				808AA0CE18AB045F00CC50FA /* AppDelegate.h */,
+				808AA0CF18AB045F00CC50FA /* AppDelegate.m */,
+				808AA0D118AB045F00CC50FA /* Main.storyboard */,
+				808AA0D418AB045F00CC50FA /* ViewController.h */,
+				808AA0D518AB045F00CC50FA /* ViewController.m */,
+				808AA0D718AB045F00CC50FA /* Images.xcassets */,
+				808AA0C618AB045F00CC50FA /* Supporting Files */,
+			);
+			path = TablaEstatica;
+			sourceTree = "<group>";
+		};
+		808AA0C618AB045F00CC50FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808AA0C718AB045F00CC50FA /* TablaEstatica-Info.plist */,
+				808AA0C818AB045F00CC50FA /* InfoPlist.strings */,
+				808AA0CB18AB045F00CC50FA /* main.m */,
+				808AA0CD18AB045F00CC50FA /* TablaEstatica-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		808AA0E418AB045F00CC50FA /* TablaEstaticaTests */ = {
+			isa = PBXGroup;
+			children = (
+				808AA0EA18AB045F00CC50FA /* TablaEstaticaTests.m */,
+				808AA0E518AB045F00CC50FA /* Supporting Files */,
+			);
+			path = TablaEstaticaTests;
+			sourceTree = "<group>";
+		};
+		808AA0E518AB045F00CC50FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				808AA0E618AB045F00CC50FA /* TablaEstaticaTests-Info.plist */,
+				808AA0E718AB045F00CC50FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808AA0BB18AB045F00CC50FA /* TablaEstatica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808AA0EE18AB045F00CC50FA /* Build configuration list for PBXNativeTarget "TablaEstatica" */;
+			buildPhases = (
+				808AA0B818AB045F00CC50FA /* Sources */,
+				808AA0B918AB045F00CC50FA /* Frameworks */,
+				808AA0BA18AB045F00CC50FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TablaEstatica;
+			productName = TablaEstatica;
+			productReference = 808AA0BC18AB045F00CC50FA /* TablaEstatica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		808AA0DC18AB045F00CC50FA /* TablaEstaticaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808AA0F118AB045F00CC50FA /* Build configuration list for PBXNativeTarget "TablaEstaticaTests" */;
+			buildPhases = (
+				808AA0D918AB045F00CC50FA /* Sources */,
+				808AA0DA18AB045F00CC50FA /* Frameworks */,
+				808AA0DB18AB045F00CC50FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				808AA0E318AB045F00CC50FA /* PBXTargetDependency */,
+			);
+			name = TablaEstaticaTests;
+			productName = TablaEstaticaTests;
+			productReference = 808AA0DD18AB045F00CC50FA /* TablaEstaticaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808AA0B418AB045F00CC50FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Franti Saúl Huamán Mera";
+				TargetAttributes = {
+					808AA0DC18AB045F00CC50FA = {
+						TestTargetID = 808AA0BB18AB045F00CC50FA;
+					};
+				};
+			};
+			buildConfigurationList = 808AA0B718AB045F00CC50FA /* Build configuration list for PBXProject "TablaEstatica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808AA0B318AB045F00CC50FA;
+			productRefGroup = 808AA0BD18AB045F00CC50FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808AA0BB18AB045F00CC50FA /* TablaEstatica */,
+				808AA0DC18AB045F00CC50FA /* TablaEstaticaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		808AA0BA18AB045F00CC50FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AA0D818AB045F00CC50FA /* Images.xcassets in Resources */,
+				808AA0CA18AB045F00CC50FA /* InfoPlist.strings in Resources */,
+				808AA0D318AB045F00CC50FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AA0DB18AB045F00CC50FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AA0E918AB045F00CC50FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808AA0B818AB045F00CC50FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AA0D618AB045F00CC50FA /* ViewController.m in Sources */,
+				808AA0D018AB045F00CC50FA /* AppDelegate.m in Sources */,
+				808AA0CC18AB045F00CC50FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808AA0D918AB045F00CC50FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808AA0EB18AB045F00CC50FA /* TablaEstaticaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		808AA0E318AB045F00CC50FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808AA0BB18AB045F00CC50FA /* TablaEstatica */;
+			targetProxy = 808AA0E218AB045F00CC50FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		808AA0C818AB045F00CC50FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808AA0C918AB045F00CC50FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		808AA0D118AB045F00CC50FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808AA0D218AB045F00CC50FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		808AA0E718AB045F00CC50FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808AA0E818AB045F00CC50FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		808AA0EC18AB045F00CC50FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		808AA0ED18AB045F00CC50FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		808AA0EF18AB045F00CC50FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TablaEstatica/TablaEstatica-Prefix.pch";
+				INFOPLIST_FILE = "TablaEstatica/TablaEstatica-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		808AA0F018AB045F00CC50FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TablaEstatica/TablaEstatica-Prefix.pch";
+				INFOPLIST_FILE = "TablaEstatica/TablaEstatica-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		808AA0F218AB045F00CC50FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TablaEstatica.app/TablaEstatica";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TablaEstatica/TablaEstatica-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TablaEstaticaTests/TablaEstaticaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		808AA0F318AB045F00CC50FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TablaEstatica.app/TablaEstatica";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TablaEstatica/TablaEstatica-Prefix.pch";
+				INFOPLIST_FILE = "TablaEstaticaTests/TablaEstaticaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808AA0B718AB045F00CC50FA /* Build configuration list for PBXProject "TablaEstatica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AA0EC18AB045F00CC50FA /* Debug */,
+				808AA0ED18AB045F00CC50FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808AA0EE18AB045F00CC50FA /* Build configuration list for PBXNativeTarget "TablaEstatica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AA0EF18AB045F00CC50FA /* Debug */,
+				808AA0F018AB045F00CC50FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		808AA0F118AB045F00CC50FA /* Build configuration list for PBXNativeTarget "TablaEstaticaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808AA0F218AB045F00CC50FA /* Debug */,
+				808AA0F318AB045F00CC50FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808AA0B418AB045F00CC50FA /* Project object */;
+}
