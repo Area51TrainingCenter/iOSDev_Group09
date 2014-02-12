@@ -21,6 +21,7 @@
 		808AA12218AB180700CC50FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AA10418AB180700CC50FA /* UIKit.framework */; };
 		808AA12A18AB180700CC50FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808AA12818AB180700CC50FA /* InfoPlist.strings */; };
 		808AA12C18AB180700CC50FA /* TablaEjercicioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA12B18AB180700CC50FA /* TablaEjercicioTests.m */; };
+		808AA13718AB192C00CC50FA /* TablaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA13618AB192C00CC50FA /* TablaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		808AA12718AB180700CC50FA /* TablaEjercicioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TablaEjercicioTests-Info.plist"; sourceTree = "<group>"; };
 		808AA12918AB180700CC50FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		808AA12B18AB180700CC50FA /* TablaEjercicioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TablaEjercicioTests.m; sourceTree = "<group>"; };
+		808AA13518AB192C00CC50FA /* TablaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaViewController.h; sourceTree = "<group>"; };
+		808AA13618AB192C00CC50FA /* TablaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				808AA11618AB180700CC50FA /* ViewController.m */,
 				808AA11818AB180700CC50FA /* Images.xcassets */,
 				808AA10718AB180700CC50FA /* Supporting Files */,
+				808AA13518AB192C00CC50FA /* TablaViewController.h */,
+				808AA13618AB192C00CC50FA /* TablaViewController.m */,
 			);
 			path = TablaEjercicio;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				808AA11718AB180700CC50FA /* ViewController.m in Sources */,
 				808AA11118AB180700CC50FA /* AppDelegate.m in Sources */,
 				808AA10D18AB180700CC50FA /* main.m in Sources */,
+				808AA13718AB192C00CC50FA /* TablaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
