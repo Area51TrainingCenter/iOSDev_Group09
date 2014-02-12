@@ -118,8 +118,12 @@
  */
 
 - (IBAction)cerrar:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)guardar:(id)sender {
+    [NSString stringWithFormat:@"%@ %@ %@",self.cajaUno.text, self.cajaDos.text, self.caja3.text];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 @end
