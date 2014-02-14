@@ -35,14 +35,13 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return 35;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototipoCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
