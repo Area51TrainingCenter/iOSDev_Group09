@@ -47,7 +47,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"prototipoCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Area51";
+    cell.textLabel.text = [NSString stringWithFormat:@"Sección: %i, Fila: %i",indexPath.section, indexPath.row];
     
     // Configure the cell...
     
