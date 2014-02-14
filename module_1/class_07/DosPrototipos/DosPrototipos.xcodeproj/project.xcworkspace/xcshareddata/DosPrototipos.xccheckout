@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5F7B6CE-51D7-4654-9046-C2FAA7BB4611</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DosPrototipos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0213ADD-F9A6-49AD-80F5-4EDCB38EB0EB</key>
+		<string>https://github.com/Area51TrainingCenter/iOSDev_Group09.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>module_1/class_07/DosPrototipos/DosPrototipos.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0213ADD-F9A6-49AD-80F5-4EDCB38EB0EB</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Area51TrainingCenter/iOSDev_Group09.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0213ADD-F9A6-49AD-80F5-4EDCB38EB0EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0213ADD-F9A6-49AD-80F5-4EDCB38EB0EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TablaDinamicaBasica</string>
+		</dict>
+	</array>
+</dict>
+</plist>
