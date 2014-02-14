@@ -21,6 +21,7 @@
 		80C663B218ADA50400F73765 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C6639418ADA50400F73765 /* UIKit.framework */; };
 		80C663BA18ADA50400F73765 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C663B818ADA50400F73765 /* InfoPlist.strings */; };
 		80C663BC18ADA50400F73765 /* DosPrototiposTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C663BB18ADA50400F73765 /* DosPrototiposTests.m */; };
+		80C663C718ADA5F400F73765 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C663C618ADA5F400F73765 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		80C663B718ADA50400F73765 /* DosPrototiposTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DosPrototiposTests-Info.plist"; sourceTree = "<group>"; };
 		80C663B918ADA50400F73765 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80C663BB18ADA50400F73765 /* DosPrototiposTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DosPrototiposTests.m; sourceTree = "<group>"; };
+		80C663C518ADA5F400F73765 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		80C663C618ADA5F400F73765 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				80C663A618ADA50400F73765 /* ViewController.m */,
 				80C663A818ADA50400F73765 /* Images.xcassets */,
 				80C6639718ADA50400F73765 /* Supporting Files */,
+				80C663C518ADA5F400F73765 /* MasterViewController.h */,
+				80C663C618ADA5F400F73765 /* MasterViewController.m */,
 			);
 			path = DosPrototipos;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C663C718ADA5F400F73765 /* MasterViewController.m in Sources */,
 				80C663A718ADA50400F73765 /* ViewController.m in Sources */,
 				80C663A118ADA50400F73765 /* AppDelegate.m in Sources */,
 				80C6639D18ADA50400F73765 /* main.m in Sources */,
