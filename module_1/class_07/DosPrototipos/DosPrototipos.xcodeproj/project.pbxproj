@@ -22,6 +22,8 @@
 		80C663BA18ADA50400F73765 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C663B818ADA50400F73765 /* InfoPlist.strings */; };
 		80C663BC18ADA50400F73765 /* DosPrototiposTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C663BB18ADA50400F73765 /* DosPrototiposTests.m */; };
 		80C663C718ADA5F400F73765 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C663C618ADA5F400F73765 /* MasterViewController.m */; };
+		80C663CA18ADB68300F73765 /* fella.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C663C818ADB68300F73765 /* fella.png */; };
+		80C663CB18ADB68300F73765 /* lime.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C663C918ADB68300F73765 /* lime.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		80C663BB18ADA50400F73765 /* DosPrototiposTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DosPrototiposTests.m; sourceTree = "<group>"; };
 		80C663C518ADA5F400F73765 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		80C663C618ADA5F400F73765 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		80C663C818ADB68300F73765 /* fella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fella.png; sourceTree = "<group>"; };
+		80C663C918ADB68300F73765 /* lime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lime.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 		80C6639618ADA50400F73765 /* DosPrototipos */ = {
 			isa = PBXGroup;
 			children = (
+				80C663C818ADB68300F73765 /* fella.png */,
+				80C663C918ADB68300F73765 /* lime.png */,
 				80C6639F18ADA50400F73765 /* AppDelegate.h */,
 				80C663A018ADA50400F73765 /* AppDelegate.m */,
 				80C663A218ADA50400F73765 /* Main.storyboard */,
@@ -233,6 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C663CA18ADB68300F73765 /* fella.png in Resources */,
+				80C663CB18ADB68300F73765 /* lime.png in Resources */,
 				80C663A918ADA50400F73765 /* Images.xcassets in Resources */,
 				80C6639B18ADA50400F73765 /* InfoPlist.strings in Resources */,
 				80C663A418ADA50400F73765 /* Main.storyboard in Resources */,

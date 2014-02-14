@@ -59,6 +59,8 @@
             UITableViewCell *u = [tableView dequeueReusableCellWithIdentifier:@"leftCell" forIndexPath:indexPath];
             u.textLabel.text = @"Fresa";
             u.detailTextLabel.text = [NSString stringWithFormat:@"%i",indexPath.row];
+            u.imageView.frame = CGRectMake(0, 0, 25, 25);
+            u.imageView.image = [UIImage imageNamed:@"fella"];
             return u;
         }
     }else{
@@ -73,5 +75,23 @@
             return w;
         }
     }
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if (section==0) {
+        return @"Frutas";
+    }else{
+        return @"Ciudades";
+    }
+}
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    if (section==0) {
+        return @"";
+    }else{
+        return @"Lista de ciudades";
+    }
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
 @end
