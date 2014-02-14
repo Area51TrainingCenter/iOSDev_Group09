@@ -49,20 +49,27 @@
     if (indexPath.section==0) {
         if (indexPath.row==0) {
             UITableViewCell *b = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
+            b.textLabel.text = @"Manzana";
             return b;
         }else if (indexPath.row==1){
             UITableViewCell *b = [tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
+            b.textLabel.text = @"Naranja";
             return b;
         }else{
             UITableViewCell *u = [tableView dequeueReusableCellWithIdentifier:@"leftCell" forIndexPath:indexPath];
+            u.textLabel.text = @"Fresa";
+            u.detailTextLabel.text = [NSString stringWithFormat:@"%i",indexPath.row];
             return u;
         }
     }else{
         if (indexPath.row==0) {
             UITableViewCell *t =[tableView dequeueReusableCellWithIdentifier:@"leftCell" forIndexPath:indexPath];
+            t.textLabel.text = @"Tokyo";
+            t.detailTextLabel.text = [NSString stringWithFormat:@"%i",indexPath.row];
             return t;
         }else{
             UITableViewCell *w =[tableView dequeueReusableCellWithIdentifier:@"basicCell" forIndexPath:indexPath];
+            w.textLabel.text = @"Lima";
             return w;
         }
     }
