@@ -42,8 +42,9 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"frutaCell" forIndexPath:indexPath];
+    
+    cell.textLabel.text = [self.listaDeFrutas objectAtIndex:indexPath.section];
     
     // Configure the cell...
     
