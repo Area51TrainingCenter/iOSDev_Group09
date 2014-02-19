@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frutaCell" rowHeight="70" id="lTw-RR-XhS">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="frutaCell" rowHeight="70" id="lTw-RR-XhS" customClass="MiCeldaCell">
                                 <rect key="frame" x="0.0" y="119" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lTw-RR-XhS" id="nOX-aF-ZW5">
@@ -40,6 +40,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="esCaro" destination="FlF-nI-McQ" id="KkN-3q-geq"/>
+                                    <outlet property="nombreDefruta" destination="d3s-IF-Pbj" id="ZvP-aF-gKk"/>
+                                    <outlet property="precioDefruta" destination="vGJ-BH-K9A" id="Y7w-Nd-eVH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

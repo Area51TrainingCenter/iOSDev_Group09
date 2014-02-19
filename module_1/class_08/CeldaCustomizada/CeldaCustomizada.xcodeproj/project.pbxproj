@@ -21,6 +21,7 @@
 		8048BC9E18B43D5B0036D681 /* CeldaCustomizadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8048BC9D18B43D5B0036D681 /* CeldaCustomizadaTests.m */; };
 		8048BCA818B43E0F0036D681 /* Celda_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8048BCA718B43E0F0036D681 /* Celda_iPhone.storyboard */; };
 		8048BCAB18B440900036D681 /* FrutasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8048BCAA18B440900036D681 /* FrutasViewController.m */; };
+		8048BCAE18B444400036D681 /* MiCeldaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8048BCAD18B444400036D681 /* MiCeldaCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8048BCA718B43E0F0036D681 /* Celda_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Celda_iPhone.storyboard; sourceTree = "<group>"; };
 		8048BCA918B440900036D681 /* FrutasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrutasViewController.h; sourceTree = "<group>"; };
 		8048BCAA18B440900036D681 /* FrutasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrutasViewController.m; sourceTree = "<group>"; };
+		8048BCAC18B444400036D681 /* MiCeldaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiCeldaCell.h; sourceTree = "<group>"; };
+		8048BCAD18B444400036D681 /* MiCeldaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiCeldaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				8048BCA718B43E0F0036D681 /* Celda_iPhone.storyboard */,
 				8048BCA918B440900036D681 /* FrutasViewController.h */,
 				8048BCAA18B440900036D681 /* FrutasViewController.m */,
+				8048BCAC18B444400036D681 /* MiCeldaCell.h */,
+				8048BCAD18B444400036D681 /* MiCeldaCell.m */,
 			);
 			path = CeldaCustomizada;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				8048BC8918B43D5B0036D681 /* AppDelegate.m in Sources */,
 				8048BCAB18B440900036D681 /* FrutasViewController.m in Sources */,
 				8048BC8518B43D5B0036D681 /* main.m in Sources */,
+				8048BCAE18B444400036D681 /* MiCeldaCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "FrutasViewController.h"
+#import "MiCeldaCell.h"
 
 @interface FrutasViewController ()
 
@@ -41,7 +42,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"frutaCell" forIndexPath:indexPath];
+    MiCeldaCell *cell = [tableView dequeueReusableCellWithIdentifier:@"frutaCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
