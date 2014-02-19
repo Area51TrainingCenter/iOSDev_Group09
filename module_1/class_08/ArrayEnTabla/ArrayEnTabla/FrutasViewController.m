@@ -7,6 +7,7 @@
 //
 
 #import "FrutasViewController.h"
+#import "ViewController.h"
 
 @interface FrutasViewController ()
 @property (nonatomic, strong) NSArray *listaDeFrutas;
@@ -49,5 +50,11 @@
     // Configure the cell...
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ViewController *t = segue.destinationViewController;
+    t.frutaSeleccionada = @"Granadilla";
+    
 }
 @end

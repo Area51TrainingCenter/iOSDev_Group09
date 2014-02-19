@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.frutaLabel.text = self.frutaSeleccionada;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
