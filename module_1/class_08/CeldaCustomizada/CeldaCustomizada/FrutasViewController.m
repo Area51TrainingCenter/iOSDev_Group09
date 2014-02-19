@@ -43,10 +43,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     MiCeldaCell *cell = [tableView dequeueReusableCellWithIdentifier:@"frutaCell" forIndexPath:indexPath];
+    cell.nombreDefruta.text = @"Naranja";
+    cell.precioDefruta.text = @"12";
+    [cell.esCaro setOn:NO];
     
     // Configure the cell...
     
     return cell;
+}
+
+#pragma mark -
+#pragma mark Table View Delegate Methods
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
 
 @end
