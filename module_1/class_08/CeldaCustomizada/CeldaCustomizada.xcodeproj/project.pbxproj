@@ -19,6 +19,7 @@
 		8048BC9418B43D5B0036D681 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8048BC7C18B43D5B0036D681 /* UIKit.framework */; };
 		8048BC9C18B43D5B0036D681 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8048BC9A18B43D5B0036D681 /* InfoPlist.strings */; };
 		8048BC9E18B43D5B0036D681 /* CeldaCustomizadaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8048BC9D18B43D5B0036D681 /* CeldaCustomizadaTests.m */; };
+		8048BCA818B43E0F0036D681 /* Celda_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8048BCA718B43E0F0036D681 /* Celda_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		8048BC9918B43D5B0036D681 /* CeldaCustomizadaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CeldaCustomizadaTests-Info.plist"; sourceTree = "<group>"; };
 		8048BC9B18B43D5B0036D681 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8048BC9D18B43D5B0036D681 /* CeldaCustomizadaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CeldaCustomizadaTests.m; sourceTree = "<group>"; };
+		8048BCA718B43E0F0036D681 /* Celda_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Celda_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				8048BC8818B43D5B0036D681 /* AppDelegate.m */,
 				8048BC8A18B43D5B0036D681 /* Images.xcassets */,
 				8048BC7F18B43D5B0036D681 /* Supporting Files */,
+				8048BCA718B43E0F0036D681 /* Celda_iPhone.storyboard */,
 			);
 			path = CeldaCustomizada;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8048BC8318B43D5B0036D681 /* InfoPlist.strings in Resources */,
+				8048BCA818B43E0F0036D681 /* Celda_iPhone.storyboard in Resources */,
 				8048BC8B18B43D5B0036D681 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
