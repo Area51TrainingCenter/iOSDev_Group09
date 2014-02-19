@@ -9,7 +9,7 @@
 #import "FrutasViewController.h"
 
 @interface FrutasViewController ()
-
+@property (nonatomic, strong) NSArray *listaDeFrutas;
 @end
 
 @implementation FrutasViewController
@@ -25,7 +25,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [NSArray arrayWithObjects:@"Papaya", @"Fresa", @"Naranja", @"Pera", @"Mandarina", @"Lucuma", @"Uva", nil];
+    self.listaDeFrutas = [NSArray arrayWithObjects:@"Papaya", @"Fresa", @"Naranja", @"Pera", @"Mandarina", @"Lucuma", @"Uva", nil];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -35,7 +35,7 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 10;
+    return [self.listaDeFrutas count];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
