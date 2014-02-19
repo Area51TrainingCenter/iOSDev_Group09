@@ -21,6 +21,7 @@
 		8048BC5618B433F70036D681 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8048BC3818B433F60036D681 /* UIKit.framework */; };
 		8048BC5E18B433F70036D681 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8048BC5C18B433F70036D681 /* InfoPlist.strings */; };
 		8048BC6018B433F70036D681 /* ArrayEnTablaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8048BC5F18B433F70036D681 /* ArrayEnTablaTests.m */; };
+		8048BC6B18B434960036D681 /* FrutasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8048BC6A18B434960036D681 /* FrutasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8048BC5B18B433F70036D681 /* ArrayEnTablaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArrayEnTablaTests-Info.plist"; sourceTree = "<group>"; };
 		8048BC5D18B433F70036D681 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8048BC5F18B433F70036D681 /* ArrayEnTablaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayEnTablaTests.m; sourceTree = "<group>"; };
+		8048BC6918B434960036D681 /* FrutasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrutasViewController.h; sourceTree = "<group>"; };
+		8048BC6A18B434960036D681 /* FrutasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrutasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				8048BC4A18B433F60036D681 /* ViewController.m */,
 				8048BC4C18B433F60036D681 /* Images.xcassets */,
 				8048BC3B18B433F60036D681 /* Supporting Files */,
+				8048BC6918B434960036D681 /* FrutasViewController.h */,
+				8048BC6A18B434960036D681 /* FrutasViewController.m */,
 			);
 			path = ArrayEnTabla;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8048BC4B18B433F60036D681 /* ViewController.m in Sources */,
+				8048BC6B18B434960036D681 /* FrutasViewController.m in Sources */,
 				8048BC4518B433F60036D681 /* AppDelegate.m in Sources */,
 				8048BC4118B433F60036D681 /* main.m in Sources */,
 			);
