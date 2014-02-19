@@ -54,7 +54,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     ViewController *t = segue.destinationViewController;
-    t.frutaSeleccionada = @"Granadilla";
+    t.frutaSeleccionada = [self.listaDeFrutas objectAtIndex:self.tableView.indexPathForSelectedRow.section];
     
 }
 @end
