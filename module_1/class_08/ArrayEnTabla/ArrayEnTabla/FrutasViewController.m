@@ -25,6 +25,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [NSArray arrayWithObjects:@"Papaya", @"Fresa", @"Naranja", @"Pera", @"Mandarina", @"Lucuma", @"Uva", nil];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
