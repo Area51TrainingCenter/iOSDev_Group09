@@ -25,9 +25,20 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    /*
+    self.caja_nombre.text;
+    self.caja_precio.text;*/
+    
+    
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section==1 && indexPath.row==0) {
+        [NSDictionary dictionaryWithObjectsAndKeys:self.caja_nombre.text, @"nombre", self.caja_precio.text, @"precio", nil];
+    }
 }
 @end

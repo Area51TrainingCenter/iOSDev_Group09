@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HijoViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextField *caja_nombre;
+@property (weak, nonatomic) IBOutlet UITextField *caja_precio;
 
 @end

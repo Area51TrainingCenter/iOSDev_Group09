@@ -124,6 +124,10 @@
                             <outlet property="delegate" destination="JwI-3x-dOp" id="WNZ-Vd-Ri1"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="caja_nombre" destination="2jC-NL-nhh" id="tcH-CF-5tJ"/>
+                        <outlet property="caja_precio" destination="l74-5V-nyN" id="AyR-bt-wee"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZu-PW-YL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
