@@ -47,6 +47,8 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testCell" forIndexPath:indexPath];
+    NSDictionary *bean = [self.lista objectAtIndex:indexPath.section];
+    cell.textLabel.text = [bean objectForKey:@"nombre"];
     
     // Configure the cell...
     
