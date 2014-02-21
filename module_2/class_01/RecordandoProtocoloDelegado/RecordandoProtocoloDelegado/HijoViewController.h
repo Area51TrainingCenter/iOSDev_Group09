@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+//Paso 1
+@protocol Area51Delegate <NSObject>
+- (void)pasarRegistro:(NSDictionary *)registro;
+@end
+
+
 @interface HijoViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UITextField *caja_nombre;
 @property (weak, nonatomic) IBOutlet UITextField *caja_precio;
-
 @end
