@@ -19,6 +19,9 @@
 		8090846018B6D03D007304C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8090844818B6D03C007304C3 /* UIKit.framework */; };
 		8090846818B6D03D007304C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8090846618B6D03D007304C3 /* InfoPlist.strings */; };
 		8090846A18B6D03D007304C3 /* RecordandoProtocoloDelegadoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8090846918B6D03D007304C3 /* RecordandoProtocoloDelegadoTests.m */; };
+		8090847418B6D072007304C3 /* Protocolo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8090847318B6D072007304C3 /* Protocolo.storyboard */; };
+		8090847718B6D4D9007304C3 /* PapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8090847618B6D4D9007304C3 /* PapaViewController.m */; };
+		8090847A18B6D4E5007304C3 /* HijoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8090847918B6D4E5007304C3 /* HijoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		8090846518B6D03D007304C3 /* RecordandoProtocoloDelegadoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecordandoProtocoloDelegadoTests-Info.plist"; sourceTree = "<group>"; };
 		8090846718B6D03D007304C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8090846918B6D03D007304C3 /* RecordandoProtocoloDelegadoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordandoProtocoloDelegadoTests.m; sourceTree = "<group>"; };
+		8090847318B6D072007304C3 /* Protocolo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Protocolo.storyboard; sourceTree = "<group>"; };
+		8090847518B6D4D9007304C3 /* PapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PapaViewController.h; sourceTree = "<group>"; };
+		8090847618B6D4D9007304C3 /* PapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PapaViewController.m; sourceTree = "<group>"; };
+		8090847818B6D4E5007304C3 /* HijoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HijoViewController.h; sourceTree = "<group>"; };
+		8090847918B6D4E5007304C3 /* HijoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HijoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,11 @@
 				8090845418B6D03D007304C3 /* AppDelegate.m */,
 				8090845618B6D03D007304C3 /* Images.xcassets */,
 				8090844B18B6D03D007304C3 /* Supporting Files */,
+				8090847318B6D072007304C3 /* Protocolo.storyboard */,
+				8090847518B6D4D9007304C3 /* PapaViewController.h */,
+				8090847618B6D4D9007304C3 /* PapaViewController.m */,
+				8090847818B6D4E5007304C3 /* HijoViewController.h */,
+				8090847918B6D4E5007304C3 /* HijoViewController.m */,
 			);
 			path = RecordandoProtocoloDelegado;
 			sourceTree = "<group>";
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8090844F18B6D03D007304C3 /* InfoPlist.strings in Resources */,
+				8090847418B6D072007304C3 /* Protocolo.storyboard in Resources */,
 				8090845718B6D03D007304C3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8090847A18B6D4E5007304C3 /* HijoViewController.m in Sources */,
 				8090845518B6D03D007304C3 /* AppDelegate.m in Sources */,
 				8090845118B6D03D007304C3 /* main.m in Sources */,
+				8090847718B6D4D9007304C3 /* PapaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
