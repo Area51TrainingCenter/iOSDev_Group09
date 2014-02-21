@@ -19,6 +19,8 @@
 		809084A318B6E9F6007304C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8090848B18B6E9F6007304C3 /* UIKit.framework */; };
 		809084AB18B6E9F6007304C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 809084A918B6E9F6007304C3 /* InfoPlist.strings */; };
 		809084AD18B6E9F6007304C3 /* UniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 809084AC18B6E9F6007304C3 /* UniversalTests.m */; };
+		809084B718B6EA56007304C3 /* Universal_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809084B618B6EA56007304C3 /* Universal_iPhone.storyboard */; };
+		809084B918B6EA66007304C3 /* Universal_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809084B818B6EA66007304C3 /* Universal_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		809084A818B6E9F6007304C3 /* UniversalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniversalTests-Info.plist"; sourceTree = "<group>"; };
 		809084AA18B6E9F6007304C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		809084AC18B6E9F6007304C3 /* UniversalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversalTests.m; sourceTree = "<group>"; };
+		809084B618B6EA56007304C3 /* Universal_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Universal_iPhone.storyboard; sourceTree = "<group>"; };
+		809084B818B6EA66007304C3 /* Universal_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Universal_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				8090849718B6E9F6007304C3 /* AppDelegate.m */,
 				8090849918B6E9F6007304C3 /* Images.xcassets */,
 				8090848E18B6E9F6007304C3 /* Supporting Files */,
+				809084B618B6EA56007304C3 /* Universal_iPhone.storyboard */,
+				809084B818B6EA66007304C3 /* Universal_iPad.storyboard */,
 			);
 			path = Universal;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				809084B718B6EA56007304C3 /* Universal_iPhone.storyboard in Resources */,
 				8090849218B6E9F6007304C3 /* InfoPlist.strings in Resources */,
+				809084B918B6EA66007304C3 /* Universal_iPad.storyboard in Resources */,
 				8090849A18B6E9F6007304C3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +370,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Universal/Universal-Prefix.pch";
 				INFOPLIST_FILE = "Universal/Universal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,7 +385,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Universal/Universal-Prefix.pch";
 				INFOPLIST_FILE = "Universal/Universal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
