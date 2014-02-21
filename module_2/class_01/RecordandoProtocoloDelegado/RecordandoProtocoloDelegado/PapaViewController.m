@@ -9,7 +9,7 @@
 #import "PapaViewController.h"
 
 @interface PapaViewController ()
-
+@property (nonatomic, strong) NSMutableArray *lista;
 @end
 
 @implementation PapaViewController
@@ -25,19 +25,25 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.lista = [NSMutableArray array];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    HijoViewController *e = segue.destinationViewController;
+    //Paso 7
+    e.delegadoDeArea51 = self;
+}
 
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return [self.lista count];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testCell" forIndexPath:indexPath];
@@ -45,5 +51,13 @@
     // Configure the cell...
     
     return cell;
+}
+
+//Paso 6
+#pragma mark -
+#pragma mark Area51 Delegate Method
+- (void)pasarRegistro:(NSDictionary *)registro{
+    [self.lista addObject:registro];
+    [self.tableView reloadData];
 }
 @end

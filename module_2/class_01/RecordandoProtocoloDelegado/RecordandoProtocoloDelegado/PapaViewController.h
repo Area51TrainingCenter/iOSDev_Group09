@@ -10,6 +10,6 @@
 //Paso 4
 #import "HijoViewController.h"
 
-@interface PapaViewController : UITableViewController<Area51Delegate> //Paso 5
+@interface PapaViewController : UITableViewController<Area51Delegate, UITextFieldDelegate> //Paso 5
 
 @end
