@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="B66-5X-Fhc">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="testCell" id="B66-5X-Fhc">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B66-5X-Fhc" id="MUp-e4-Wq6">
@@ -28,7 +28,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="bN2-oR-eZu">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="gxt-Xe-Iqr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gxt-Xe-Iqr">
                             <connections>
                                 <segue destination="JwI-3x-dOp" kind="modal" id="tr5-NH-Yfh"/>
                             </connections>
