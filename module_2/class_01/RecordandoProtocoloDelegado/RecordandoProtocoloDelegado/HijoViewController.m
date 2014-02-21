@@ -38,7 +38,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==1 && indexPath.row==0) {
-        [NSDictionary dictionaryWithObjectsAndKeys:self.caja_nombre.text, @"nombre", self.caja_precio.text, @"precio", nil];
+        NSDictionary *r = [NSDictionary dictionaryWithObjectsAndKeys:self.caja_nombre.text, @"nombre", self.caja_precio.text, @"precio", nil];
+        //Paso 3
+        [self.delegadoDeArea51 pasarRegistro:r];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 @end

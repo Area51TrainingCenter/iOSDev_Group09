@@ -17,4 +17,6 @@
 @interface HijoViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UITextField *caja_nombre;
 @property (weak, nonatomic) IBOutlet UITextField *caja_precio;
+//Paso 2
+@property (nonatomic, weak) id<Area51Delegate>delegadoDeArea51;
 @end
