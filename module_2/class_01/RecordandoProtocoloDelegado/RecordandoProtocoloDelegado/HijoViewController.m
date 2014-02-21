@@ -25,11 +25,6 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-    /*
-    self.caja_nombre.text;
-    self.caja_precio.text;*/
-    
-    
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];

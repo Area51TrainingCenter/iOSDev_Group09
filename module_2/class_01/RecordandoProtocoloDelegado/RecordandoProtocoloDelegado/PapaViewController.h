@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+//Paso 4
+#import "HijoViewController.h"
 
-@interface PapaViewController : UITableViewController
+@interface PapaViewController : UITableViewController<Area51Delegate> //Paso 5
 
 @end
