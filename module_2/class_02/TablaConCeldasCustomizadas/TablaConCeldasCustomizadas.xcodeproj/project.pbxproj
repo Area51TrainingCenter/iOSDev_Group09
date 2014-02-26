@@ -23,6 +23,8 @@
 		80D82A3E18BD6B4500DCC1A5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A3D18BD6B4500DCC1A5 /* MenuViewController.m */; };
 		80D82A4118BD6B4E00DCC1A5 /* NuevoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A4018BD6B4E00DCC1A5 /* NuevoViewController.m */; };
 		80D82A4818BD6E0C00DCC1A5 /* FormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A4718BD6E0C00DCC1A5 /* FormCell.m */; };
+		80D82A4B18BD810F00DCC1A5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A4A18BD810F00DCC1A5 /* Menu.m */; };
+		80D82A4E18BD847C00DCC1A5 /* TablaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A4D18BD847C00DCC1A5 /* TablaController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		80D82A4018BD6B4E00DCC1A5 /* NuevoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoViewController.m; sourceTree = "<group>"; };
 		80D82A4618BD6E0C00DCC1A5 /* FormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormCell.h; sourceTree = "<group>"; };
 		80D82A4718BD6E0C00DCC1A5 /* FormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormCell.m; sourceTree = "<group>"; };
+		80D82A4918BD810F00DCC1A5 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		80D82A4A18BD810F00DCC1A5 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		80D82A4C18BD847C00DCC1A5 /* TablaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablaController.h; sourceTree = "<group>"; };
+		80D82A4D18BD847C00DCC1A5 /* TablaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablaController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,8 @@
 		80BBDBB018BD6835006BC4C1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				80D82A4C18BD847C00DCC1A5 /* TablaController.h */,
+				80D82A4D18BD847C00DCC1A5 /* TablaController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +185,8 @@
 		80BBDBB118BD6835006BC4C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				80D82A4918BD810F00DCC1A5 /* Menu.h */,
+				80D82A4A18BD810F00DCC1A5 /* Menu.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,7 +342,9 @@
 			files = (
 				80D82A4118BD6B4E00DCC1A5 /* NuevoViewController.m in Sources */,
 				80BBDB8D18BD66E7006BC4C1 /* AppDelegate.m in Sources */,
+				80D82A4B18BD810F00DCC1A5 /* Menu.m in Sources */,
 				80D82A4818BD6E0C00DCC1A5 /* FormCell.m in Sources */,
+				80D82A4E18BD847C00DCC1A5 /* TablaController.m in Sources */,
 				80D82A3E18BD6B4500DCC1A5 /* MenuViewController.m in Sources */,
 				80BBDB8918BD66E7006BC4C1 /* main.m in Sources */,
 			);
