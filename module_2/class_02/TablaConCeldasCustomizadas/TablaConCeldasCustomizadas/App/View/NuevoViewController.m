@@ -94,7 +94,9 @@
         m.price = self.currentPrice.text;
         
         if ([[TablaController sharedInstance] guardarRegistro:m]) {
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self dismissViewControllerAnimated:YES completion:^{
+                [self.delegate recargarLista];
+            }];
         }else{
             [[[UIAlertView alloc] initWithTitle:@"ERROR " message:@"No se pudo guardar el registro" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
         }

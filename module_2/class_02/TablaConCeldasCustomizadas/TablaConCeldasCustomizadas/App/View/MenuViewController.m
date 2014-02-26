@@ -7,9 +7,12 @@
 //
 
 #import "MenuViewController.h"
+#import "TablaController.h"
+#import "Menu.h"
+#import "NuevoViewController.h"
 
-@interface MenuViewController ()
-
+@interface MenuViewController ()<NuevoViewControllerDelegate>
+@property (nonatomic, strong) NSArray *lista;
 @end
 
 @implementation MenuViewController
@@ -30,21 +33,33 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UINavigationController *nav = segue.destinationViewController;
+    NuevoViewController *t = (NuevoViewController *)nav.topViewController;
+    t.delegate=self;
+}
 
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return [self.lista count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menuCell" forIndexPath:indexPath];
+    Menu *bean = (Menu *)[self.lista objectAtIndex:indexPath.row];
+    cell.textLabel.text = bean.name;
+    cell.detailTextLabel.text = bean.price;
     return cell;
+}
+
+#pragma mark -
+#pragma mark Nuevo Delegate Method
+- (void)recargarLista{
+    self.lista = [[TablaController sharedInstance] obtenerMenus];
+    [self.tableView reloadData];
 }
 @end

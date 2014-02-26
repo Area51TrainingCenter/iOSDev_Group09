@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol NuevoViewControllerDelegate <NSObject>
+- (void)recargarLista;
+@end
+
 @interface NuevoViewController : UITableViewController
 - (IBAction)closeButton:(id)sender;
 - (IBAction)saveButton:(id)sender;
-
+@property (nonatomic, weak) id<NuevoViewControllerDelegate>delegate;
 @end

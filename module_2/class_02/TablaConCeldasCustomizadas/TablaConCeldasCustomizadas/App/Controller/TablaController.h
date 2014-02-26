@@ -12,5 +12,5 @@
 @interface TablaController : NSObject
 - (BOOL)guardarRegistro:(Menu *)item;
 + (instancetype)sharedInstance;
-- (NSMutableArray *)obtenerMenus
+- (NSMutableArray *)obtenerMenus;
 @end
