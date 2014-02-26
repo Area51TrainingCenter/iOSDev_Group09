@@ -19,6 +19,10 @@
 		80BBDB9818BD66E7006BC4C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BBDB8018BD66E7006BC4C1 /* UIKit.framework */; };
 		80BBDBA018BD66E7006BC4C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80BBDB9E18BD66E7006BC4C1 /* InfoPlist.strings */; };
 		80BBDBA218BD66E7006BC4C1 /* TablaConCeldasCustomizadasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BBDBA118BD66E7006BC4C1 /* TablaConCeldasCustomizadasTests.m */; };
+		80BBDBB818BD6871006BC4C1 /* Tabla_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BBDBB718BD6871006BC4C1 /* Tabla_iPhone.storyboard */; };
+		80D82A3E18BD6B4500DCC1A5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A3D18BD6B4500DCC1A5 /* MenuViewController.m */; };
+		80D82A4118BD6B4E00DCC1A5 /* NuevoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A4018BD6B4E00DCC1A5 /* NuevoViewController.m */; };
+		80D82A4818BD6E0C00DCC1A5 /* FormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D82A4718BD6E0C00DCC1A5 /* FormCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		80BBDB9D18BD66E7006BC4C1 /* TablaConCeldasCustomizadasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TablaConCeldasCustomizadasTests-Info.plist"; sourceTree = "<group>"; };
 		80BBDB9F18BD66E7006BC4C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80BBDBA118BD66E7006BC4C1 /* TablaConCeldasCustomizadasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TablaConCeldasCustomizadasTests.m; sourceTree = "<group>"; };
+		80BBDBB718BD6871006BC4C1 /* Tabla_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tabla_iPhone.storyboard; sourceTree = "<group>"; };
+		80D82A3C18BD6B4500DCC1A5 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		80D82A3D18BD6B4500DCC1A5 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		80D82A3F18BD6B4E00DCC1A5 /* NuevoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoViewController.h; sourceTree = "<group>"; };
+		80D82A4018BD6B4E00DCC1A5 /* NuevoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoViewController.m; sourceTree = "<group>"; };
+		80D82A4618BD6E0C00DCC1A5 /* FormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormCell.h; sourceTree = "<group>"; };
+		80D82A4718BD6E0C00DCC1A5 /* FormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,8 @@
 		80BBDB8218BD66E7006BC4C1 /* TablaConCeldasCustomizadas */ = {
 			isa = PBXGroup;
 			children = (
+				80BBDBAF18BD6835006BC4C1 /* App */,
+				80BBDBB318BD6835006BC4C1 /* Resources */,
 				80BBDB8B18BD66E7006BC4C1 /* AppDelegate.h */,
 				80BBDB8C18BD66E7006BC4C1 /* AppDelegate.m */,
 				80BBDB8E18BD66E7006BC4C1 /* Images.xcassets */,
@@ -142,6 +155,83 @@
 				80BBDB9E18BD66E7006BC4C1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80BBDBAF18BD6835006BC4C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80BBDBB018BD6835006BC4C1 /* Controller */,
+				80BBDBB118BD6835006BC4C1 /* Model */,
+				80BBDBB218BD6835006BC4C1 /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80BBDBB018BD6835006BC4C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80BBDBB118BD6835006BC4C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80BBDBB218BD6835006BC4C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80D82A4518BD6E0C00DCC1A5 /* Cell */,
+				80D82A3C18BD6B4500DCC1A5 /* MenuViewController.h */,
+				80D82A3D18BD6B4500DCC1A5 /* MenuViewController.m */,
+				80D82A3F18BD6B4E00DCC1A5 /* NuevoViewController.h */,
+				80D82A4018BD6B4E00DCC1A5 /* NuevoViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80BBDBB318BD6835006BC4C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80BBDBB418BD6835006BC4C1 /* Images */,
+				80BBDBB518BD6835006BC4C1 /* Libraries */,
+				80BBDBB618BD6835006BC4C1 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80BBDBB418BD6835006BC4C1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		80BBDBB518BD6835006BC4C1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		80BBDBB618BD6835006BC4C1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				80BBDBB718BD6871006BC4C1 /* Tabla_iPhone.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		80D82A4518BD6E0C00DCC1A5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80D82A4618BD6E0C00DCC1A5 /* FormCell.h */,
+				80D82A4718BD6E0C00DCC1A5 /* FormCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80BBDBB818BD6871006BC4C1 /* Tabla_iPhone.storyboard in Resources */,
 				80BBDB8718BD66E7006BC4C1 /* InfoPlist.strings in Resources */,
 				80BBDB8F18BD66E7006BC4C1 /* Images.xcassets in Resources */,
 			);
@@ -239,7 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D82A4118BD6B4E00DCC1A5 /* NuevoViewController.m in Sources */,
 				80BBDB8D18BD66E7006BC4C1 /* AppDelegate.m in Sources */,
+				80D82A4818BD6E0C00DCC1A5 /* FormCell.m in Sources */,
+				80D82A3E18BD6B4500DCC1A5 /* MenuViewController.m in Sources */,
 				80BBDB8918BD66E7006BC4C1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +535,7 @@
 				80BBDBA718BD66E7006BC4C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80BBDBA818BD66E7006BC4C1 /* Build configuration list for PBXNativeTarget "TablaConCeldasCustomizadasTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +544,7 @@
 				80BBDBAA18BD66E7006BC4C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
