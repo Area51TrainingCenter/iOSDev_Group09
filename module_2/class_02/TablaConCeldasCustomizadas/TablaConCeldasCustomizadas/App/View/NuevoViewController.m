@@ -8,11 +8,15 @@
 
 #import "NuevoViewController.h"
 
+//custom cells
+#import "FormCell.h"
+
 @interface NuevoViewController ()
 
 @end
 
 @implementation NuevoViewController
+
 #pragma mark -
 #pragma mark LifeCycle Methods
 - (id)initWithStyle:(UITableViewStyle)style{
@@ -33,17 +37,34 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 2;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    if (section==0) {
+        return 2;
+    }else{
+        return 1;
+    }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    FormCell *cell = [tableView dequeueReusableCellWithIdentifier:@"formCell" forIndexPath:indexPath];
     
+    if (indexPath.section==0) {
+        if (indexPath.row==0) {
+            cell.name.text = @"Nombre";
+            cell.value.placeholder = @"Steve Jobs";
+            cell.value.returnKeyType = UIReturnKeyNext;
+        }else{
+            cell.name.text = @"Descripción";
+            cell.value.placeholder = @"Ingresar";
+            cell.value.returnKeyType = UIReturnKeyNext;
+        }
+    }else{
+        cell.name.text = @"Precio";
+        cell.value.placeholder = @"En Soles";
+        cell.value.returnKeyType = UIReturnKeyDone;
+    }
     return cell;
 }
 
