@@ -10,7 +10,8 @@
 #import "EjercicioController.h"
 
 @interface ListaViewController ()
-@property (nonatomic, strong) NSArray *miLista;
+@property (nonatomic, strong) NSMutableArray *frutas;
+@property (nonatomic, strong) NSMutableArray *tuberculos;
 @end
 
 @implementation ListaViewController
@@ -26,7 +27,18 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.miLista =[[EjercicioController sharedInstance] obtenerRegistros];
+    self.frutas = [NSMutableArray new];
+    self.tuberculos = [NSMutableArray new];
+    
+    NSArray *miLista =[[EjercicioController sharedInstance] obtenerRegistros];
+    
+    for (Objeto *bean in miLista) {
+        if (bean.tipo==0) {
+            [self.frutas addObject:bean];
+        }else{
+            [self.tuberculos addObject:bean];
+        }
+    }
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -40,14 +52,23 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section==0) {
+        return [self.frutas count];
         //pinto el número de frutas
     }else{
+        return [self.tuberculos count];
         //pinto el número de tuberculos
     }
-    return 0;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testeCell" forIndexPath:indexPath];
+    
+    if (indexPath.section==0) {
+        Objeto *current = [self.frutas objectAtIndex:indexPath.row];
+        cell.textLabel.text = current.nombre;
+    }else{
+        Objeto *current = [self.tuberculos objectAtIndex:indexPath.row];
+        cell.textLabel.text = current.nombre;
+    }
     return cell;
 }
 @end
