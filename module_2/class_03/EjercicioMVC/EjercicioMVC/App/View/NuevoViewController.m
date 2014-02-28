@@ -44,6 +44,7 @@
         actual.tipo = self.esTuberculo.on;
         //registrar
         if ([[EjercicioController sharedInstance] guardarRegistro:actual]) {
+            [self.delegate actualizarTabla];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }else{

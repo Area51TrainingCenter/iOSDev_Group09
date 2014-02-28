@@ -8,8 +8,9 @@
 
 #import "ListaViewController.h"
 #import "EjercicioController.h"
+#import "NuevoViewController.h"
 
-@interface ListaViewController ()
+@interface ListaViewController ()<NuevoViewControllerDelegate>
 @property (nonatomic, strong) NSMutableArray *frutas;
 @property (nonatomic, strong) NSMutableArray *tuberculos;
 @end
@@ -30,19 +31,16 @@
     self.frutas = [NSMutableArray new];
     self.tuberculos = [NSMutableArray new];
     
-    NSArray *miLista =[[EjercicioController sharedInstance] obtenerRegistros];
     
-    for (Objeto *bean in miLista) {
-        if (bean.tipo==0) {
-            [self.frutas addObject:bean];
-        }else{
-            [self.tuberculos addObject:bean];
-        }
-    }
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UINavigationController *nav = segue.destinationViewController;
+    NuevoViewController *t = (NuevoViewController *)nav.topViewController;
+    t.delegate = self;
 }
 
 #pragma mark -
@@ -70,5 +68,20 @@
         cell.textLabel.text = current.nombre;
     }
     return cell;
+}
+
+- (void)actualizarTabla{
+    NSArray *miLista =[[EjercicioController sharedInstance] obtenerRegistros];
+    
+    NSLog(@"Objetos: %i", [miLista count]);
+    
+    for (Objeto *bean in miLista) {
+        if (bean.tipo==0) {
+            [self.frutas addObject:bean];
+        }else{
+            [self.tuberculos addObject:bean];
+        }
+    }
+    [self.tableView reloadData];
 }
 @end
