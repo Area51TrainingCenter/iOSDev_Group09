@@ -180,10 +180,16 @@
                     <navigationItem key="navigationItem" title="Nuevo" id="LUj-Co-eSL">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="gqw-Xm-zy7"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cajaNombre" destination="fcE-Lf-gyx" id="Pe8-Ht-9Hc"/>
+                        <outlet property="cajaOrigen" destination="AH3-XQ-izW" id="O4d-gY-ALO"/>
+                        <outlet property="cajaPrecio" destination="ukO-JY-Td1" id="hRe-n5-s8F"/>
+                        <outlet property="esTuberculo" destination="0c9-wh-Rxc" id="XCM-3w-hRS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G10-fA-VWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="-3"/>
+            <point key="canvasLocation" x="775" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xev-MX-rfK">
@@ -219,7 +225,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzw-Tm-h3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423" y="-3"/>
+            <point key="canvasLocation" x="424" y="5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
