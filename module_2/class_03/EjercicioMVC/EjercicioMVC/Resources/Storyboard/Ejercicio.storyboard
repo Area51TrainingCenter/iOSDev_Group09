@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Lista-->
+        <!--Lista View Controller - Lista-->
         <scene sceneID="1dQ-hH-NWF">
             <objects>
-                <tableViewController id="Z2X-4R-cHu" sceneMemberID="viewController">
+                <tableViewController id="Z2X-4R-cHu" customClass="ListaViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="nla-K8-cvN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="49" y="5"/>
         </scene>
-        <!--Table View Controller - Nuevo-->
+        <!--Nuevo View Controller - Nuevo-->
         <scene sceneID="Wkv-rm-nhi">
             <objects>
-                <tableViewController id="i87-RO-JMQ" sceneMemberID="viewController">
+                <tableViewController id="i87-RO-JMQ" customClass="NuevoViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="YRP-No-4Rv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

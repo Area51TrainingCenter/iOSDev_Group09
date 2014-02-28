@@ -20,6 +20,8 @@
 		80D45E4E18C016ED00D17E3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D45E4C18C016ED00D17E3A /* InfoPlist.strings */; };
 		80D45E5018C016ED00D17E3A /* EjercicioMVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D45E4F18C016ED00D17E3A /* EjercicioMVCTests.m */; };
 		80D45E6018C0173300D17E3A /* Ejercicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D45E5F18C0173300D17E3A /* Ejercicio.storyboard */; };
+		80D45E6318C0192700D17E3A /* ListaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D45E6218C0192700D17E3A /* ListaViewController.m */; };
+		80D45E6618C0193100D17E3A /* NuevoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D45E6518C0193100D17E3A /* NuevoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		80D45E4D18C016ED00D17E3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80D45E4F18C016ED00D17E3A /* EjercicioMVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EjercicioMVCTests.m; sourceTree = "<group>"; };
 		80D45E5F18C0173300D17E3A /* Ejercicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ejercicio.storyboard; sourceTree = "<group>"; };
+		80D45E6118C0192700D17E3A /* ListaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaViewController.h; sourceTree = "<group>"; };
+		80D45E6218C0192700D17E3A /* ListaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaViewController.m; sourceTree = "<group>"; };
+		80D45E6418C0193100D17E3A /* NuevoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoViewController.h; sourceTree = "<group>"; };
+		80D45E6518C0193100D17E3A /* NuevoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,10 @@
 		80D45E5C18C0171800D17E3A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80D45E6118C0192700D17E3A /* ListaViewController.h */,
+				80D45E6218C0192700D17E3A /* ListaViewController.m */,
+				80D45E6418C0193100D17E3A /* NuevoViewController.h */,
+				80D45E6518C0193100D17E3A /* NuevoViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D45E6618C0193100D17E3A /* NuevoViewController.m in Sources */,
 				80D45E3B18C016ED00D17E3A /* AppDelegate.m in Sources */,
 				80D45E3718C016ED00D17E3A /* main.m in Sources */,
+				80D45E6318C0192700D17E3A /* ListaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
