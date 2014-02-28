@@ -19,6 +19,7 @@
 		80D45E4618C016ED00D17E3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D45E2E18C016ED00D17E3A /* UIKit.framework */; };
 		80D45E4E18C016ED00D17E3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D45E4C18C016ED00D17E3A /* InfoPlist.strings */; };
 		80D45E5018C016ED00D17E3A /* EjercicioMVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D45E4F18C016ED00D17E3A /* EjercicioMVCTests.m */; };
+		80D45E6018C0173300D17E3A /* Ejercicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D45E5F18C0173300D17E3A /* Ejercicio.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		80D45E4B18C016ED00D17E3A /* EjercicioMVCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EjercicioMVCTests-Info.plist"; sourceTree = "<group>"; };
 		80D45E4D18C016ED00D17E3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80D45E4F18C016ED00D17E3A /* EjercicioMVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EjercicioMVCTests.m; sourceTree = "<group>"; };
+		80D45E5F18C0173300D17E3A /* Ejercicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ejercicio.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,8 @@
 		80D45E3018C016ED00D17E3A /* EjercicioMVC */ = {
 			isa = PBXGroup;
 			children = (
+				80D45E5918C0171800D17E3A /* App */,
+				80D45E5D18C0171800D17E3A /* Resources */,
 				80D45E3918C016ED00D17E3A /* AppDelegate.h */,
 				80D45E3A18C016ED00D17E3A /* AppDelegate.m */,
 				80D45E3C18C016ED00D17E3A /* Images.xcassets */,
@@ -142,6 +146,53 @@
 				80D45E4C18C016ED00D17E3A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80D45E5918C0171800D17E3A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80D45E5A18C0171800D17E3A /* Controller */,
+				80D45E5B18C0171800D17E3A /* Model */,
+				80D45E5C18C0171800D17E3A /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80D45E5A18C0171800D17E3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80D45E5B18C0171800D17E3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80D45E5C18C0171800D17E3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80D45E5D18C0171800D17E3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80D45E5E18C0171800D17E3A /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80D45E5E18C0171800D17E3A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80D45E5F18C0173300D17E3A /* Ejercicio.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D45E3518C016ED00D17E3A /* InfoPlist.strings in Resources */,
+				80D45E6018C0173300D17E3A /* Ejercicio.storyboard in Resources */,
 				80D45E3D18C016ED00D17E3A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
