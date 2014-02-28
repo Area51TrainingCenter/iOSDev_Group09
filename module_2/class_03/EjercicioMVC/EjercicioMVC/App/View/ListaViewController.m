@@ -7,9 +7,10 @@
 //
 
 #import "ListaViewController.h"
+#import "EjercicioController.h"
 
 @interface ListaViewController ()
-
+@property (nonatomic, strong) NSArray *miLista;
 @end
 
 @implementation ListaViewController
@@ -25,6 +26,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.miLista =[[EjercicioController sharedInstance] obtenerRegistros];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -34,9 +36,14 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 2;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section==0) {
+        //pinto el número de frutas
+    }else{
+        //pinto el número de tuberculos
+    }
     return 0;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

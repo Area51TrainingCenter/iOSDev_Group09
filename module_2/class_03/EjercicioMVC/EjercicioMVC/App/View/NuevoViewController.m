@@ -8,6 +8,7 @@
 
 #import "NuevoViewController.h"
 #import "Objeto.h"
+#import "EjercicioController.h"
 
 @interface NuevoViewController ()
 
@@ -41,8 +42,10 @@
         actual.precio = self.cajaPrecio.text;
         actual.origen = self.cajaOrigen.text;
         actual.tipo = self.esTuberculo.on;
-        
         //registrar
+        if ([[EjercicioController sharedInstance] guardarRegistro:actual]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
     }else{
         
     }

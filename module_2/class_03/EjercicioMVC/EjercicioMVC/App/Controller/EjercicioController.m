@@ -31,9 +31,14 @@
     return y;
 }
 - (BOOL)guardarRegistro:(Objeto *)item{
-    
+    if (item!=nil) {
+        [self.lista addObject:item];
+        return YES;
+    }else{
+        return NO;
+    }
 }
 - (NSMutableArray *)obtenerRegistros{
-    
+    return self.lista;
 }
 @end
