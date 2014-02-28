@@ -7,6 +7,7 @@
 //
 
 #import "NuevoViewController.h"
+#import "Objeto.h"
 
 @interface NuevoViewController ()
 
@@ -35,6 +36,12 @@
 #pragma mark Table View Delegate Methods
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==2) {
+        Objeto *actual = [Objeto new];
+        actual.nombre = self.cajaNombre.text;
+        actual.precio = self.cajaPrecio.text;
+        actual.origen = self.cajaOrigen.text;
+        actual.tipo = self.esTuberculo.on;
+        
         //registrar
     }else{
         

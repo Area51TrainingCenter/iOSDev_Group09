@@ -22,6 +22,8 @@
 		80D45E6018C0173300D17E3A /* Ejercicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D45E5F18C0173300D17E3A /* Ejercicio.storyboard */; };
 		80D45E6318C0192700D17E3A /* ListaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D45E6218C0192700D17E3A /* ListaViewController.m */; };
 		80D45E6618C0193100D17E3A /* NuevoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D45E6518C0193100D17E3A /* NuevoViewController.m */; };
+		80EE364618C01C2700B30A5D /* Objeto.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EE364518C01C2700B30A5D /* Objeto.m */; };
+		80EE364918C01F8800B30A5D /* EjercicioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EE364818C01F8800B30A5D /* EjercicioController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		80D45E6218C0192700D17E3A /* ListaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaViewController.m; sourceTree = "<group>"; };
 		80D45E6418C0193100D17E3A /* NuevoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoViewController.h; sourceTree = "<group>"; };
 		80D45E6518C0193100D17E3A /* NuevoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoViewController.m; sourceTree = "<group>"; };
+		80EE364418C01C2700B30A5D /* Objeto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objeto.h; sourceTree = "<group>"; };
+		80EE364518C01C2700B30A5D /* Objeto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objeto.m; sourceTree = "<group>"; };
+		80EE364718C01F8800B30A5D /* EjercicioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EjercicioController.h; sourceTree = "<group>"; };
+		80EE364818C01F8800B30A5D /* EjercicioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EjercicioController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 		80D45E5A18C0171800D17E3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				80EE364718C01F8800B30A5D /* EjercicioController.h */,
+				80EE364818C01F8800B30A5D /* EjercicioController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +182,8 @@
 		80D45E5B18C0171800D17E3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				80EE364418C01C2700B30A5D /* Objeto.h */,
+				80EE364518C01C2700B30A5D /* Objeto.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80EE364618C01C2700B30A5D /* Objeto.m in Sources */,
+				80EE364918C01F8800B30A5D /* EjercicioController.m in Sources */,
 				80D45E6618C0193100D17E3A /* NuevoViewController.m in Sources */,
 				80D45E3B18C016ED00D17E3A /* AppDelegate.m in Sources */,
 				80D45E3718C016ED00D17E3A /* main.m in Sources */,
@@ -505,6 +517,7 @@
 				80D45E5518C016ED00D17E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D45E5618C016ED00D17E3A /* Build configuration list for PBXNativeTarget "EjercicioMVCTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				80D45E5818C016ED00D17E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
