@@ -37,6 +37,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)viewDidDisappear:(BOOL)animated{
+    [self.frutas removeAllObjects];
+    [self.tuberculos removeAllObjects];
+}
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     UINavigationController *nav = segue.destinationViewController;
     NuevoViewController *t = (NuevoViewController *)nav.topViewController;
