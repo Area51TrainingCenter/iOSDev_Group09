@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3813CCEF-BC7C-4DD6-91A1-826A274848EA</string>
+	<string>58F74383-4347-4798-81B5-7D27C3CF8CAF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>TablaConCeldasCustomizadas</string>
+	<string>EjercicioMVC</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C2284DD1-3E06-4CB1-B6A3-F95022ED7328</key>
+		<key>E168353B-8313-4FE3-870F-C9BA027FABD1</key>
 		<string>https://github.com/Area51TrainingCenter/iOSDev_Group09.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>module_2/class_02/TablaConCeldasCustomizadas/TablaConCeldasCustomizadas.xcodeproj/project.xcworkspace</string>
+	<string>module_2/class_03/EjercicioMVC/EjercicioMVC.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C2284DD1-3E06-4CB1-B6A3-F95022ED7328</key>
+		<key>E168353B-8313-4FE3-870F-C9BA027FABD1</key>
 		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C2284DD1-3E06-4CB1-B6A3-F95022ED7328</string>
+	<string>E168353B-8313-4FE3-870F-C9BA027FABD1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C2284DD1-3E06-4CB1-B6A3-F95022ED7328</string>
+			<string>E168353B-8313-4FE3-870F-C9BA027FABD1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TablaConCeldasCustomizadas</string>
+			<string>iOSDev_Group09</string>
 		</dict>
 	</array>
 </dict>
