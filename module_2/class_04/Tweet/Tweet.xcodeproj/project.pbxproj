@@ -23,6 +23,8 @@
 		80545A9518C6A1C000C305CE /* ListaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9418C6A1C000C305CE /* ListaViewController.m */; };
 		80545A9818C6A1CD00C305CE /* NuevoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9718C6A1CD00C305CE /* NuevoViewController.m */; };
 		80545A9B18C6A1DB00C305CE /* DetalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9A18C6A1DB00C305CE /* DetalleViewController.m */; };
+		80B1748C18C6AB58007411D9 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B1748B18C6AB58007411D9 /* Tweet.m */; };
+		80B1748F18C6ACA3007411D9 /* TweetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B1748E18C6ACA3007411D9 /* TweetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		80545A9718C6A1CD00C305CE /* NuevoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoViewController.m; sourceTree = "<group>"; };
 		80545A9918C6A1DB00C305CE /* DetalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleViewController.h; sourceTree = "<group>"; };
 		80545A9A18C6A1DB00C305CE /* DetalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleViewController.m; sourceTree = "<group>"; };
+		80B1748A18C6AB58007411D9 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		80B1748B18C6AB58007411D9 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		80B1748D18C6ACA3007411D9 /* TweetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetController.h; sourceTree = "<group>"; };
+		80B1748E18C6ACA3007411D9 /* TweetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,8 @@
 		80545A8C18C6A0E800C305CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				80B1748D18C6ACA3007411D9 /* TweetController.h */,
+				80B1748E18C6ACA3007411D9 /* TweetController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +185,8 @@
 		80545A8D18C6A0E800C305CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				80B1748A18C6AB58007411D9 /* Tweet.h */,
+				80B1748B18C6AB58007411D9 /* Tweet.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,8 +319,10 @@
 				80545A9818C6A1CD00C305CE /* NuevoViewController.m in Sources */,
 				80545A6D18C6A0BD00C305CE /* AppDelegate.m in Sources */,
 				80545A6918C6A0BD00C305CE /* main.m in Sources */,
+				80B1748C18C6AB58007411D9 /* Tweet.m in Sources */,
 				80545A9B18C6A1DB00C305CE /* DetalleViewController.m in Sources */,
 				80545A9518C6A1C000C305CE /* ListaViewController.m in Sources */,
+				80B1748F18C6ACA3007411D9 /* TweetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +523,7 @@
 				80545A8718C6A0BD00C305CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80545A8818C6A0BD00C305CE /* Build configuration list for PBXNativeTarget "TweetTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +532,7 @@
 				80545A8A18C6A0BD00C305CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

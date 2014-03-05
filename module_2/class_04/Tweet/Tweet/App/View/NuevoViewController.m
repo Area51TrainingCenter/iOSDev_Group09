@@ -7,6 +7,7 @@
 //
 
 #import "NuevoViewController.h"
+#import "Tweet.h"
 
 @interface NuevoViewController ()
 @property (nonatomic, strong) UITextView *miTextView;
@@ -59,6 +60,12 @@
 }
 
 - (IBAction)guardar:(id)sender {
-    [[[UIAlertView alloc] initWithTitle:@"Alerta" message:self.miTextView.text delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+    Tweet *nuevo = [[Tweet alloc] init];
+    nuevo.texto = self.miTextView.text;
+    nuevo.fechaDeRegistro = [NSDate date];
+    
+    
+    /*
+    [[[UIAlertView alloc] initWithTitle:@"Alerta" message:self.miTextView.text delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];*/
 }
 @end
