@@ -19,6 +19,10 @@
 		80545A7818C6A0BD00C305CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80545A6018C6A0BD00C305CE /* UIKit.framework */; };
 		80545A8018C6A0BD00C305CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80545A7E18C6A0BD00C305CE /* InfoPlist.strings */; };
 		80545A8218C6A0BD00C305CE /* TweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A8118C6A0BD00C305CE /* TweetTests.m */; };
+		80545A9218C6A0FA00C305CE /* Tweet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80545A9118C6A0FA00C305CE /* Tweet.storyboard */; };
+		80545A9518C6A1C000C305CE /* ListaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9418C6A1C000C305CE /* ListaViewController.m */; };
+		80545A9818C6A1CD00C305CE /* NuevoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9718C6A1CD00C305CE /* NuevoViewController.m */; };
+		80545A9B18C6A1DB00C305CE /* DetalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9A18C6A1DB00C305CE /* DetalleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		80545A7D18C6A0BD00C305CE /* TweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetTests-Info.plist"; sourceTree = "<group>"; };
 		80545A7F18C6A0BD00C305CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80545A8118C6A0BD00C305CE /* TweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetTests.m; sourceTree = "<group>"; };
+		80545A9118C6A0FA00C305CE /* Tweet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tweet.storyboard; sourceTree = "<group>"; };
+		80545A9318C6A1C000C305CE /* ListaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaViewController.h; sourceTree = "<group>"; };
+		80545A9418C6A1C000C305CE /* ListaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaViewController.m; sourceTree = "<group>"; };
+		80545A9618C6A1CD00C305CE /* NuevoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NuevoViewController.h; sourceTree = "<group>"; };
+		80545A9718C6A1CD00C305CE /* NuevoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NuevoViewController.m; sourceTree = "<group>"; };
+		80545A9918C6A1DB00C305CE /* DetalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleViewController.h; sourceTree = "<group>"; };
+		80545A9A18C6A1DB00C305CE /* DetalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,8 @@
 		80545A6218C6A0BD00C305CE /* Tweet */ = {
 			isa = PBXGroup;
 			children = (
+				80545A8B18C6A0E800C305CE /* App */,
+				80545A8F18C6A0E800C305CE /* Resources */,
 				80545A6B18C6A0BD00C305CE /* AppDelegate.h */,
 				80545A6C18C6A0BD00C305CE /* AppDelegate.m */,
 				80545A6E18C6A0BD00C305CE /* Images.xcassets */,
@@ -142,6 +155,59 @@
 				80545A7E18C6A0BD00C305CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80545A8B18C6A0E800C305CE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80545A8C18C6A0E800C305CE /* Controller */,
+				80545A8D18C6A0E800C305CE /* Model */,
+				80545A8E18C6A0E800C305CE /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80545A8C18C6A0E800C305CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80545A8D18C6A0E800C305CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80545A8E18C6A0E800C305CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80545A9318C6A1C000C305CE /* ListaViewController.h */,
+				80545A9418C6A1C000C305CE /* ListaViewController.m */,
+				80545A9618C6A1CD00C305CE /* NuevoViewController.h */,
+				80545A9718C6A1CD00C305CE /* NuevoViewController.m */,
+				80545A9918C6A1DB00C305CE /* DetalleViewController.h */,
+				80545A9A18C6A1DB00C305CE /* DetalleViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80545A8F18C6A0E800C305CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80545A9018C6A0E800C305CE /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80545A9018C6A0E800C305CE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80545A9118C6A0FA00C305CE /* Tweet.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80545A6718C6A0BD00C305CE /* InfoPlist.strings in Resources */,
+				80545A9218C6A0FA00C305CE /* Tweet.storyboard in Resources */,
 				80545A6F18C6A0BD00C305CE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80545A9818C6A1CD00C305CE /* NuevoViewController.m in Sources */,
 				80545A6D18C6A0BD00C305CE /* AppDelegate.m in Sources */,
 				80545A6918C6A0BD00C305CE /* main.m in Sources */,
+				80545A9B18C6A1DB00C305CE /* DetalleViewController.m in Sources */,
+				80545A9518C6A1C000C305CE /* ListaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
