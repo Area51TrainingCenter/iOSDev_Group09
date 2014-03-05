@@ -67,7 +67,7 @@
     
     if ([[TweetController sharedInstance] guardarNuevoTweet:nuevo]) {
         [self dismissViewControllerAnimated:YES completion:^{
-            
+            [self.delegate actualizarTabla];
         }];
     }
 }

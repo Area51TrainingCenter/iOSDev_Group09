@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Lista View Controller-->
+        <!--Lista View Controller - Lista-->
         <scene sceneID="miQ-9s-D0g">
             <objects>
                 <tableViewController id="8TN-vW-sex" customClass="ListaViewController" sceneMemberID="viewController">
@@ -13,12 +13,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QRd-5M-s7D">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listaCell" textLabel="vAW-Vx-vxx" detailTextLabel="mtR-ma-FyD" style="IBUITableViewCellStyleSubtitle" id="QRd-5M-s7D">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QRd-5M-s7D" id="kPO-CY-FmL">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAW-Vx-vxx">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mtR-ma-FyD">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="ZiB-6D-C5D" kind="push" id="eVT-Ar-9Pe"/>
@@ -30,10 +46,10 @@
                             <outlet property="delegate" destination="8TN-vW-sex" id="7Cv-mc-Zcb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="sgu-PL-Kna">
+                    <navigationItem key="navigationItem" title="Lista" id="sgu-PL-Kna">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vzO-uq-pBa">
                             <connections>
-                                <segue destination="Flm-J4-nwm" kind="modal" id="2ws-S5-bWJ"/>
+                                <segue destination="Flm-J4-nwm" kind="modal" identifier="newSegue" id="2ws-S5-bWJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
