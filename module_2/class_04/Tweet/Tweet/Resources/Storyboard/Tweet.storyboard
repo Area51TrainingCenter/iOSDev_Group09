@@ -40,7 +40,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fng-a1-7iA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="350"/>
+            <point key="canvasLocation" x="206" y="370"/>
         </scene>
         <!--Detalle View Controller-->
         <scene sceneID="adz-WF-0ZJ">
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXc-Lc-c7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="424"/>
+            <point key="canvasLocation" x="992" y="572"/>
         </scene>
         <!--Nuevo View Controller - Nuevo-->
         <scene sceneID="gSf-Fa-YSJ">
@@ -77,7 +77,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFb-aO-80S">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFb-aO-80S">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,8 +94,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Nuevo" id="NZw-hk-3Dq">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="RAo-hr-YvO"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="A87-vB-2Wr"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="RAo-hr-YvO">
+                            <connections>
+                                <action selector="cerrar:" destination="fsg-aG-USp" id="tdQ-He-Fux"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="A87-vB-2Wr">
+                            <connections>
+                                <action selector="guardar:" destination="fsg-aG-USp" id="lm1-a7-rCo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HF8-At-eiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,7 +126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqi-w3-Hzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105" y="350"/>
+            <point key="canvasLocation" x="-189" y="350"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YgT-MA-nwc">

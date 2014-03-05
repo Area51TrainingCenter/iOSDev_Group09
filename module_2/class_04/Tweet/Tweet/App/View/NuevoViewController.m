@@ -9,7 +9,7 @@
 #import "NuevoViewController.h"
 
 @interface NuevoViewController ()
-
+@property (nonatomic, strong) UITextView *miTextView;
 @end
 
 @implementation NuevoViewController
@@ -42,6 +42,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comentarioCell" forIndexPath:indexPath];
     
+    self.miTextView = (UITextView *)[cell viewWithTag:101];
+    
+    
     // Configure the cell...
     
     return cell;
@@ -51,5 +54,11 @@
 #pragma mark Table View Delegate Methods
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 150;
+}
+- (IBAction)cerrar:(id)sender {
+}
+
+- (IBAction)guardar:(id)sender {
+    [[[UIAlertView alloc] initWithTitle:@"Alerta" message:self.miTextView.text delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
 }
 @end

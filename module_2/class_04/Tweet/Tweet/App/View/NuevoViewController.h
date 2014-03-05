@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NuevoViewController : UITableViewController
+- (IBAction)cerrar:(id)sender;
+- (IBAction)guardar:(id)sender;
 
 @end
