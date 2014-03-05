@@ -9,9 +9,11 @@
 #import "NuevoViewController.h"
 #import "Tweet.h"
 #import "TweetController.h"
+#import "DecideCell.h"
 
 @interface NuevoViewController ()
 @property (nonatomic, strong) UITextView *miTextView;
+@property int numeroDeSecciones;
 @end
 
 @implementation NuevoViewController
@@ -27,6 +29,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.numeroDeSecciones = 2;
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -36,26 +39,51 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return self.numeroDeSecciones;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    if (section==0 || section==1) {
+        return 1;
+    }else{
+        return 3;
+    }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comentarioCell" forIndexPath:indexPath];
-    
-    self.miTextView = (UITextView *)[cell viewWithTag:101];
-    
-    
-    // Configure the cell...
-    
-    return cell;
+    if (indexPath.section==0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comentarioCell" forIndexPath:indexPath];
+        
+        self.miTextView = (UITextView *)[cell viewWithTag:101];
+        return cell;
+    }else if (indexPath.section==1){
+        DecideCell *w = [tableView dequeueReusableCellWithIdentifier:@"decideCell" forIndexPath:indexPath];
+        [w.activar addTarget:self action:@selector(manipularSwitch:) forControlEvents:UIControlEventValueChanged];
+        return w;
+    }else{
+        UITableViewCell *wed = [tableView dequeueReusableCellWithIdentifier:@"testCell" forIndexPath:indexPath];
+        return wed;
+    }
+}
+- (IBAction)manipularSwitch:(id)sender{
+    UISwitch *actual = (UISwitch *)sender;
+    if (actual.on) {
+        self.numeroDeSecciones=3;
+        [self.tableView insertSections:[NSIndexSet indexSetWithIndex:2] withRowAnimation:UITableViewRowAnimationRight];
+        //mostrar una tercera sección
+    }else{
+        self.numeroDeSecciones=2;
+        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:2] withRowAnimation:UITableViewRowAnimationLeft];
+        //eliminar la tercera sección
+    }
 }
 
 #pragma mark -
 #pragma mark Table View Delegate Methods
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    if (indexPath.section==0) {
+        return 150;
+    }else{
+        return 44;
+    }
 }
 - (IBAction)cerrar:(id)sender {
 }

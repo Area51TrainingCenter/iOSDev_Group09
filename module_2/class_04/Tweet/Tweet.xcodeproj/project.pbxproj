@@ -25,6 +25,7 @@
 		80545A9B18C6A1DB00C305CE /* DetalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80545A9A18C6A1DB00C305CE /* DetalleViewController.m */; };
 		80B1748C18C6AB58007411D9 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B1748B18C6AB58007411D9 /* Tweet.m */; };
 		80B1748F18C6ACA3007411D9 /* TweetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B1748E18C6ACA3007411D9 /* TweetController.m */; };
+		80B1749218C6BF82007411D9 /* DecideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B1749118C6BF82007411D9 /* DecideCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		80B1748B18C6AB58007411D9 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		80B1748D18C6ACA3007411D9 /* TweetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetController.h; sourceTree = "<group>"; };
 		80B1748E18C6ACA3007411D9 /* TweetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetController.m; sourceTree = "<group>"; };
+		80B1749018C6BF82007411D9 /* DecideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecideCell.h; sourceTree = "<group>"; };
+		80B1749118C6BF82007411D9 /* DecideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecideCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 				80545A9718C6A1CD00C305CE /* NuevoViewController.m */,
 				80545A9918C6A1DB00C305CE /* DetalleViewController.h */,
 				80545A9A18C6A1DB00C305CE /* DetalleViewController.m */,
+				80B1749018C6BF82007411D9 /* DecideCell.h */,
+				80B1749118C6BF82007411D9 /* DecideCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				80545A6918C6A0BD00C305CE /* main.m in Sources */,
 				80B1748C18C6AB58007411D9 /* Tweet.m in Sources */,
 				80545A9B18C6A1DB00C305CE /* DetalleViewController.m in Sources */,
+				80B1749218C6BF82007411D9 /* DecideCell.m in Sources */,
 				80545A9518C6A1C000C305CE /* ListaViewController.m in Sources */,
 				80B1748F18C6ACA3007411D9 /* TweetController.m in Sources */,
 			);
