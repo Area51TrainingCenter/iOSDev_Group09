@@ -37,7 +37,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ZiB-6D-C5D" kind="push" id="eVT-Ar-9Pe"/>
+                                    <segue destination="ZiB-6D-C5D" kind="push" identifier="detalleSegue" id="4sP-mF-GLe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,12 +56,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fng-a1-7iA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="370"/>
+            <point key="canvasLocation" x="246" y="334"/>
         </scene>
         <!--Detalle View Controller-->
         <scene sceneID="adz-WF-0ZJ">
             <objects>
-                <viewController id="ZiB-6D-C5D" customClass="DetalleViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detalleEscena" id="ZiB-6D-C5D" customClass="DetalleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dS9-mE-Lou"/>
                         <viewControllerLayoutGuide type="bottom" id="xnR-xQ-sn4"/>
@@ -69,13 +69,25 @@
                     <view key="view" contentMode="scaleToFill" id="FLh-S8-HeA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik5-O7-EZf">
+                                <rect key="frame" x="20" y="144" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fk5-7b-PXF"/>
+                    <connections>
+                        <outlet property="miLabel" destination="ik5-O7-EZf" id="WdM-1M-a0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXc-Lc-c7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="572"/>
+            <point key="canvasLocation" x="681" y="445"/>
         </scene>
         <!--Nuevo View Controller - Nuevo-->
         <scene sceneID="gSf-Fa-YSJ">

@@ -25,6 +25,8 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.miLabel.text = self.miObjetoAmostrar.texto;
+    
 	// Do any additional setup after loading the view.
 }
 - (void)didReceiveMemoryWarning{

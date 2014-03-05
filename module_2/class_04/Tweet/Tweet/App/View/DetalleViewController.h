@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tweet.h"
 
 @interface DetalleViewController : UIViewController
-
+@property (nonatomic, strong) Tweet *miObjetoAmostrar;
+@property (weak, nonatomic) IBOutlet UILabel *miLabel;
 @end

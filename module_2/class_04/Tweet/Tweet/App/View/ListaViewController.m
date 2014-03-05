@@ -10,6 +10,7 @@
 #import "NuevoViewController.h"
 #import "TweetController.h"
 #import "Tweet.h"
+#import "DetalleViewController.h"
 
 @interface ListaViewController ()<NuevoViewControllerDelegate>
 @property (nonatomic, strong) NSArray *listaDeTweetsAMostrar;
@@ -27,7 +28,7 @@
     return self;
 }
 - (void)viewDidLoad{
-    [super viewDidLoad];
+    [super viewDidLoad];    
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -38,6 +39,10 @@
         UINavigationController *nav = segue.destinationViewController;
         NuevoViewController *t = (NuevoViewController *)nav.topViewController;
         t.delegate = self;
+    }else if ([segue.identifier isEqualToString:@"detalleSegue"]){
+        DetalleViewController *e = segue.destinationViewController;
+        e.miObjetoAmostrar = [self.listaDeTweetsAMostrar objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        
     }
 }
 
@@ -55,10 +60,19 @@
     Tweet *bean = [self.listaDeTweetsAMostrar objectAtIndex:indexPath.row];
     cell.textLabel.text = bean.texto;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",bean.fechaDeRegistro];
-    
-    // Configure the cell...
-    
     return cell;
+}
+
+#pragma mark -
+#pragma mark Table View Delegate Methods
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    /*
+    DetalleViewController *y = [self.storyboard instantiateViewControllerWithIdentifier:@"detalleEscena"];
+    //push
+    [self.navigationController pushViewController:y animated:YES];
+    //modal
+    [self presentViewController:y animated:YES completion:nil];*/
 }
 
 #pragma mark -
