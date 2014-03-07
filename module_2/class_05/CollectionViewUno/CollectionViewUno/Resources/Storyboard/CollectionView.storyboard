@@ -20,14 +20,15 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="a0z-G6-v5J">
-                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="50" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="0.42256030589999999" green="0.89268427309999998" blue="0.44032137259999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="customSize" width="60" height="60"/>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="N1J-x5-rjU">
@@ -36,7 +37,7 @@
                             <color key="backgroundColor" red="0.96078431369999995" green="0.87843137250000003" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="ahM-tt-QwN">
-                            <rect key="frame" x="0.0" y="100" width="320" height="50"/>
+                            <rect key="frame" x="0.0" y="110" width="320" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <color key="backgroundColor" red="0.65098039220000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </collectionReusableView>
