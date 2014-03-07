@@ -8,7 +8,7 @@
 
 #import "MasterViewController.h"
 
-@interface MasterViewController ()
+@interface MasterViewController ()<UICollectionViewDelegateFlowLayout>
 
 @end
 
@@ -56,4 +56,9 @@
     }
 }
 
+#pragma mark -
+#pragma mark Collection View Delegate Flow Layout Methods
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(60.0, 60.0);
+}
 @end
