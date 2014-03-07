@@ -19,6 +19,8 @@
 		80DE67D918C94CF5000627BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DE67C118C94CF5000627BC /* UIKit.framework */; };
 		80DE67E118C94CF5000627BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80DE67DF18C94CF5000627BC /* InfoPlist.strings */; };
 		80DE67E318C94CF5000627BC /* CollectionViewUnoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DE67E218C94CF5000627BC /* CollectionViewUnoTests.m */; };
+		80DE67F318C94D3D000627BC /* CollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DE67F218C94D3D000627BC /* CollectionView.storyboard */; };
+		80DE67F618C94F71000627BC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DE67F518C94F70000627BC /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		80DE67DE18C94CF5000627BC /* CollectionViewUnoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewUnoTests-Info.plist"; sourceTree = "<group>"; };
 		80DE67E018C94CF5000627BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80DE67E218C94CF5000627BC /* CollectionViewUnoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewUnoTests.m; sourceTree = "<group>"; };
+		80DE67F218C94D3D000627BC /* CollectionView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionView.storyboard; sourceTree = "<group>"; };
+		80DE67F418C94F70000627BC /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		80DE67F518C94F70000627BC /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,8 @@
 		80DE67C318C94CF5000627BC /* CollectionViewUno */ = {
 			isa = PBXGroup;
 			children = (
+				80DE67EC18C94D2D000627BC /* App */,
+				80DE67F018C94D2D000627BC /* Resources */,
 				80DE67CC18C94CF5000627BC /* AppDelegate.h */,
 				80DE67CD18C94CF5000627BC /* AppDelegate.m */,
 				80DE67CF18C94CF5000627BC /* Images.xcassets */,
@@ -142,6 +149,55 @@
 				80DE67DF18C94CF5000627BC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80DE67EC18C94D2D000627BC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80DE67ED18C94D2D000627BC /* Controller */,
+				80DE67EE18C94D2D000627BC /* Model */,
+				80DE67EF18C94D2D000627BC /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80DE67ED18C94D2D000627BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80DE67EE18C94D2D000627BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80DE67EF18C94D2D000627BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80DE67F418C94F70000627BC /* MasterViewController.h */,
+				80DE67F518C94F70000627BC /* MasterViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80DE67F018C94D2D000627BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80DE67F118C94D2D000627BC /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80DE67F118C94D2D000627BC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80DE67F218C94D3D000627BC /* CollectionView.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DE67F318C94D3D000627BC /* CollectionView.storyboard in Resources */,
 				80DE67C818C94CF5000627BC /* InfoPlist.strings in Resources */,
 				80DE67D018C94CF5000627BC /* Images.xcassets in Resources */,
 			);
@@ -240,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80DE67CE18C94CF5000627BC /* AppDelegate.m in Sources */,
+				80DE67F618C94F71000627BC /* MasterViewController.m in Sources */,
 				80DE67CA18C94CF5000627BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
