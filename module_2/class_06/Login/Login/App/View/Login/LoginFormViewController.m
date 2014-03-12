@@ -7,6 +7,7 @@
 //
 
 #import "LoginFormViewController.h"
+#import "AppDelegate.h"
 #import "FormCell.h"
 
 @interface LoginFormViewController ()
@@ -65,5 +66,9 @@
         c.value.placeholder = @"Ingresar";
     }
     return c;
+}
+- (IBAction)doneButton:(id)sender{
+    AppDelegate *t = [[UIApplication sharedApplication] delegate];
+    [t mostrarApp];
 }
 @end

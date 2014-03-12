@@ -7,8 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginMenuViewController.h"
+#import "AppViewController.h"
 
 @implementation AppDelegate
+
+- (void)mostrarApp{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    AppViewController *ap = [storyboard instantiateViewControllerWithIdentifier:@"appScene"];
+    [self.window setRootViewController:ap];
+}
+- (void)mostrarLogin{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    LoginMenuViewController *log = [storyboard instantiateViewControllerWithIdentifier:@"loginScene"];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:log];
+    [self.window setRootViewController:nav];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

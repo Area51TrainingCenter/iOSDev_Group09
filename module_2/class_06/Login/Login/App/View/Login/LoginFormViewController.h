@@ -10,4 +10,5 @@
 
 @interface LoginFormViewController : UITableViewController
 @property BOOL esRegistro;
+- (IBAction)doneButton:(id)sender;
 @end
