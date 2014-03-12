@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  AppViewController.h
 //  Login
 //
 //  Created by Franti Saúl Huamán Mera on 3/11/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppViewController : UITabBarController
 
-@property (strong, nonatomic) UIWindow *window;
 @end
