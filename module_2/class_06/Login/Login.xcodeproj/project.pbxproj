@@ -20,6 +20,7 @@
 		8021B8A218CFDD3A009A0AFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8021B8A018CFDD3A009A0AFC /* InfoPlist.strings */; };
 		8021B8A418CFDD3A009A0AFC /* LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8021B8A318CFDD3A009A0AFC /* LoginTests.m */; };
 		8021B8B418CFDDB2009A0AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8021B8B318CFDDB2009A0AFC /* Login.storyboard */; };
+		80A7D20518CFDF27008B5DFE /* LoginMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7D20418CFDF27008B5DFE /* LoginMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		8021B8A118CFDD3A009A0AFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8021B8A318CFDD3A009A0AFC /* LoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTests.m; sourceTree = "<group>"; };
 		8021B8B318CFDDB2009A0AFC /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		80A7D20318CFDF27008B5DFE /* LoginMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginMenuViewController.h; sourceTree = "<group>"; };
+		80A7D20418CFDF27008B5DFE /* LoginMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,7 @@
 		8021B8B018CFDD91009A0AFC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80A7D20218CFDF27008B5DFE /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +197,15 @@
 				8021B8B318CFDDB2009A0AFC /* Login.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		80A7D20218CFDF27008B5DFE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				80A7D20318CFDF27008B5DFE /* LoginMenuViewController.h */,
+				80A7D20418CFDF27008B5DFE /* LoginMenuViewController.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 			files = (
 				8021B88F18CFDD3A009A0AFC /* AppDelegate.m in Sources */,
 				8021B88B18CFDD3A009A0AFC /* main.m in Sources */,
+				80A7D20518CFDF27008B5DFE /* LoginMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +507,7 @@
 				8021B8A918CFDD3A009A0AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8021B8AA18CFDD3A009A0AFC /* Build configuration list for PBXNativeTarget "LoginTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +516,7 @@
 				8021B8AC18CFDD3A009A0AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
