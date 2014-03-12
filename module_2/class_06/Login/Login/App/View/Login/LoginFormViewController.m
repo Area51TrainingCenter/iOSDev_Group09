@@ -51,6 +51,7 @@
     if (indexPath.row==0) {
         c.name.text = @"Email";
         c.value.placeholder = @"example@gmail.com";
+        c.value.keyboardType = UIKeyboardTypeEmailAddress;
     }else if (indexPath.row==1){
         if (self.esRegistro) {
             c.name.text = @"Nombre";
@@ -60,7 +61,7 @@
             c.value.placeholder = @"Ingresar";
         }
     }else{
-        c.name.text = @"Nombre";
+        c.name.text = @"Clave";
         c.value.placeholder = @"Ingresar";
     }
     return c;
