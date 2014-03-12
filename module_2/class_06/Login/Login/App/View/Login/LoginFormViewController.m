@@ -7,6 +7,7 @@
 //
 
 #import "LoginFormViewController.h"
+#import "FormCell.h"
 
 @interface LoginFormViewController ()
 
@@ -35,17 +36,33 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    if (self.esRegistro) {
+        return 3;
+    }else{
+        return 2;
+    }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    
-    return cell;
+    FormCell *c = [tableView dequeueReusableCellWithIdentifier:@"formCell" forIndexPath:indexPath];
+    if (indexPath.row==0) {
+        c.name.text = @"Email";
+        c.value.placeholder = @"example@gmail.com";
+    }else if (indexPath.row==1){
+        if (self.esRegistro) {
+            c.name.text = @"Nombre";
+            c.value.placeholder = @"Ingresar";
+        }else{
+            c.name.text = @"Clave";
+            c.value.placeholder = @"Ingresar";
+        }
+    }else{
+        c.name.text = @"Nombre";
+        c.value.placeholder = @"Ingresar";
+    }
+    return c;
 }
 @end

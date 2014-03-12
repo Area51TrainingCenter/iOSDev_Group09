@@ -22,6 +22,7 @@
 		8021B8B418CFDDB2009A0AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8021B8B318CFDDB2009A0AFC /* Login.storyboard */; };
 		80A7D20518CFDF27008B5DFE /* LoginMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7D20418CFDF27008B5DFE /* LoginMenuViewController.m */; };
 		80A7D20818CFE1DB008B5DFE /* LoginFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7D20718CFE1DB008B5DFE /* LoginFormViewController.m */; };
+		80A7D20B18CFF0DD008B5DFE /* FormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7D20A18CFF0DD008B5DFE /* FormCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		80A7D20418CFDF27008B5DFE /* LoginMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMenuViewController.m; sourceTree = "<group>"; };
 		80A7D20618CFE1DB008B5DFE /* LoginFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFormViewController.h; sourceTree = "<group>"; };
 		80A7D20718CFE1DB008B5DFE /* LoginFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFormViewController.m; sourceTree = "<group>"; };
+		80A7D20918CFF0DD008B5DFE /* FormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormCell.h; sourceTree = "<group>"; };
+		80A7D20A18CFF0DD008B5DFE /* FormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +212,8 @@
 				80A7D20418CFDF27008B5DFE /* LoginMenuViewController.m */,
 				80A7D20618CFE1DB008B5DFE /* LoginFormViewController.h */,
 				80A7D20718CFE1DB008B5DFE /* LoginFormViewController.m */,
+				80A7D20918CFF0DD008B5DFE /* FormCell.h */,
+				80A7D20A18CFF0DD008B5DFE /* FormCell.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 			files = (
 				80A7D20818CFE1DB008B5DFE /* LoginFormViewController.m in Sources */,
 				8021B88F18CFDD3A009A0AFC /* AppDelegate.m in Sources */,
+				80A7D20B18CFF0DD008B5DFE /* FormCell.m in Sources */,
 				8021B88B18CFDD3A009A0AFC /* main.m in Sources */,
 				80A7D20518CFDF27008B5DFE /* LoginMenuViewController.m in Sources */,
 			);
