@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginMenuViewController : UIViewController
+- (IBAction)registrarButtom:(id)sender;
 
 @end

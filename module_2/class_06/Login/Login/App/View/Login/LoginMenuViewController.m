@@ -37,4 +37,9 @@
     t.esRegistro= NO;
 }
 
+- (IBAction)registrarButtom:(id)sender {
+    LoginFormViewController *t = [self.storyboard instantiateViewControllerWithIdentifier:@"formScene"];
+    t.esRegistro=YES;
+    [self.navigationController pushViewController:t animated:YES];
+}
 @end

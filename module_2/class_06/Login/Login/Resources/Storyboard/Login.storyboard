@@ -36,6 +36,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registrarButtom:" destination="Wbe-uW-pXq" eventType="touchUpInside" id="mF6-Je-z29"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -49,7 +52,7 @@
         <!--Login Form View Controller-->
         <scene sceneID="bkm-fC-2hY">
             <objects>
-                <tableViewController id="gDp-h0-hta" customClass="LoginFormViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="formScene" id="gDp-h0-hta" customClass="LoginFormViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1h3-vn-QzI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
