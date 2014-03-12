@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="424" y="59"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Login Form View Controller-->
         <scene sceneID="bkm-fC-2hY">
             <objects>
-                <tableViewController id="gDp-h0-hta" sceneMemberID="viewController">
+                <tableViewController id="gDp-h0-hta" customClass="LoginFormViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1h3-vn-QzI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

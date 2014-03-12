@@ -7,6 +7,7 @@
 //
 
 #import "LoginMenuViewController.h"
+#import "LoginFormViewController.h"
 
 @interface LoginMenuViewController ()
 
@@ -30,6 +31,10 @@
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    LoginFormViewController *t = segue.destinationViewController;
+    t.esRegistro= NO;
 }
 
 @end
