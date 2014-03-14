@@ -18,4 +18,12 @@
     }
     return self;
 }
+- (instancetype)initWithName:(NSString *)nombre email:(NSString *)email{
+    self = [super init];
+    if (self) {
+        self.nombre = nombre;
+        self.email = email;
+    }
+    return self;
+}
 @end

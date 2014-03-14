@@ -70,9 +70,12 @@
     return c;
 }
 - (IBAction)doneButton:(id)sender{
+    
+    /*
     UsuarioBean *nuevo = [[UsuarioBean alloc] init];
     nuevo.nombre = @"Carlos";
-    nuevo.email = @"carlos@area51.pe";
+    nuevo.email = @"carlos@area51.pe";*/
+    UsuarioBean *nuevo = [[UsuarioBean alloc] initWithName:@"Carlos" email:@"carlos@area51.pe"];
     
     if ([[LoginController sharedInstance] guardarUsuario:nuevo]) {
         AppDelegate *t = [[UIApplication sharedApplication] delegate];

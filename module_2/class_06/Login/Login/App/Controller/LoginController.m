@@ -20,6 +20,9 @@
     return t;
 }
 - (BOOL)guardarUsuario:(UsuarioBean *)usuario{
+    NSLog(@"Nombre: %@",usuario.nombre);
+    NSLog(@"Email: %@",usuario.email);
+    
     return NO;
 }
 @end
