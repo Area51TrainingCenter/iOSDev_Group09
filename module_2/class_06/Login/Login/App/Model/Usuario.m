@@ -11,8 +11,9 @@
 
 @implementation Usuario
 
+@dynamic clave;
 @dynamic email;
 @dynamic nombre;
-@dynamic clave;
+@dynamic edad;
 
 @end

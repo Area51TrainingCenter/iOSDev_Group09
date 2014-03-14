@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-
 @interface Usuario : NSManagedObject
 
+@property (nonatomic, retain) NSString * clave;
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) NSString * nombre;
-@property (nonatomic, retain) NSString * clave;
+@property (nonatomic, retain) NSString * edad;
 
 @end
