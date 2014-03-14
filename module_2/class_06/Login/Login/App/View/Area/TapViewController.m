@@ -8,6 +8,7 @@
 
 #import "TapViewController.h"
 #import "AppDelegate.h"
+#import "LoginController.h"
 
 @interface TapViewController ()
 
@@ -34,7 +35,9 @@
 }
 
 - (IBAction)salirButton:(id)sender {
-    AppDelegate *r = [[UIApplication sharedApplication] delegate];
-    [r mostrarLogin];
+    if ([[LoginController sharedInstance] eliminarUsuario]) {
+        AppDelegate *r = [[UIApplication sharedApplication] delegate];
+        [r mostrarLogin];
+    }
 }
 @end

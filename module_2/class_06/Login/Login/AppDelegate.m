@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginMenuViewController.h"
 #import "AppViewController.h"
+#import "LoginController.h"
 
 @implementation AppDelegate
 @synthesize managedObjectContext = _managedObjectContext;
@@ -29,6 +30,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if ([[LoginController sharedInstance] obtenerUsuario]!=nil) {
+        [self mostrarApp];
+    }else{
+        [self mostrarLogin];
+    }
     return YES;
 }
 

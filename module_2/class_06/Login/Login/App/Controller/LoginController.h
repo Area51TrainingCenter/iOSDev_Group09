@@ -12,4 +12,6 @@
 @interface LoginController : NSObject
 + (instancetype)sharedInstance;
 - (BOOL)guardarUsuario:(UsuarioBean *)usuario;
+- (id)obtenerUsuario;
+- (BOOL)eliminarUsuario;
 @end
