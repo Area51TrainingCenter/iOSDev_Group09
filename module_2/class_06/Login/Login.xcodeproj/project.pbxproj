@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8015847018D282230093A88D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015846F18D282230093A88D /* CoreData.framework */; };
 		8021B87F18CFDD3A009A0AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B87E18CFDD3A009A0AFC /* Foundation.framework */; };
 		8021B88118CFDD3A009A0AFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */; };
 		8021B88318CFDD3A009A0AFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B88218CFDD3A009A0AFC /* UIKit.framework */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8015846F18D282230093A88D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8021B87B18CFDD3A009A0AFC /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8021B87E18CFDD3A009A0AFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8015847018D282230093A88D /* CoreData.framework in Frameworks */,
 				8021B88118CFDD3A009A0AFC /* CoreGraphics.framework in Frameworks */,
 				8021B88318CFDD3A009A0AFC /* UIKit.framework in Frameworks */,
 				8021B87F18CFDD3A009A0AFC /* Foundation.framework in Frameworks */,
@@ -113,6 +116,7 @@
 		8021B87D18CFDD3A009A0AFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8015846F18D282230093A88D /* CoreData.framework */,
 				8021B87E18CFDD3A009A0AFC /* Foundation.framework */,
 				8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */,
 				8021B88218CFDD3A009A0AFC /* UIKit.framework */,
