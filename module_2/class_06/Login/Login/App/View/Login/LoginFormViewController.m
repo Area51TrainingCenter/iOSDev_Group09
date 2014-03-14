@@ -9,6 +9,8 @@
 #import "LoginFormViewController.h"
 #import "AppDelegate.h"
 #import "FormCell.h"
+#import "LoginController.h"
+#import "UsuarioBean.h"
 
 @interface LoginFormViewController ()
 
@@ -68,7 +70,15 @@
     return c;
 }
 - (IBAction)doneButton:(id)sender{
-    AppDelegate *t = [[UIApplication sharedApplication] delegate];
-    [t mostrarApp];
+    UsuarioBean *nuevo = [[UsuarioBean alloc] init];
+    nuevo.nombre = @"Carlos";
+    nuevo.email = @"carlos@area51.pe";
+    
+    if ([[LoginController sharedInstance] guardarUsuario:nuevo]) {
+        AppDelegate *t = [[UIApplication sharedApplication] delegate];
+        [t mostrarApp];
+    }else{
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"No se pudo iniciar sesión" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+    }
 }
 @end

@@ -10,6 +10,8 @@
 		8015847018D282230093A88D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015846F18D282230093A88D /* CoreData.framework */; };
 		8015847318D282DF0093A88D /* Login.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8015847118D282DF0093A88D /* Login.xcdatamodeld */; };
 		801584BA18D287580093A88D /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 801584B918D287580093A88D /* Usuario.m */; };
+		801584BD18D2885D0093A88D /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801584BC18D2885D0093A88D /* LoginController.m */; };
+		801584C018D28C970093A88D /* UsuarioBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 801584BF18D28C970093A88D /* UsuarioBean.m */; };
 		8021B87F18CFDD3A009A0AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B87E18CFDD3A009A0AFC /* Foundation.framework */; };
 		8021B88118CFDD3A009A0AFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */; };
 		8021B88318CFDD3A009A0AFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B88218CFDD3A009A0AFC /* UIKit.framework */; };
@@ -45,6 +47,10 @@
 		8015847218D282DF0093A88D /* Login.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Login.xcdatamodel; sourceTree = "<group>"; };
 		801584B818D287580093A88D /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
 		801584B918D287580093A88D /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		801584BB18D2885D0093A88D /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		801584BC18D2885D0093A88D /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		801584BE18D28C970093A88D /* UsuarioBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsuarioBean.h; sourceTree = "<group>"; };
+		801584BF18D28C970093A88D /* UsuarioBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsuarioBean.m; sourceTree = "<group>"; };
 		8021B87B18CFDD3A009A0AFC /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8021B87E18CFDD3A009A0AFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,6 +192,8 @@
 		8021B8AE18CFDD91009A0AFC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				801584BB18D2885D0093A88D /* LoginController.h */,
+				801584BC18D2885D0093A88D /* LoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +203,8 @@
 			children = (
 				801584B818D287580093A88D /* Usuario.h */,
 				801584B918D287580093A88D /* Usuario.m */,
+				801584BE18D28C970093A88D /* UsuarioBean.h */,
+				801584BF18D28C970093A88D /* UsuarioBean.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +359,8 @@
 				80A7D20B18CFF0DD008B5DFE /* FormCell.m in Sources */,
 				8015847318D282DF0093A88D /* Login.xcdatamodeld in Sources */,
 				801584BA18D287580093A88D /* Usuario.m in Sources */,
+				801584BD18D2885D0093A88D /* LoginController.m in Sources */,
+				801584C018D28C970093A88D /* UsuarioBean.m in Sources */,
 				8021B88B18CFDD3A009A0AFC /* main.m in Sources */,
 				80A7D21518D002E3008B5DFE /* TapViewController.m in Sources */,
 				80A7D21218CFFB25008B5DFE /* AppViewController.m in Sources */,
