@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8015847018D282230093A88D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8015846F18D282230093A88D /* CoreData.framework */; };
+		8015847318D282DF0093A88D /* Login.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8015847118D282DF0093A88D /* Login.xcdatamodeld */; };
 		8021B87F18CFDD3A009A0AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B87E18CFDD3A009A0AFC /* Foundation.framework */; };
 		8021B88118CFDD3A009A0AFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */; };
 		8021B88318CFDD3A009A0AFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8021B88218CFDD3A009A0AFC /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		8015846F18D282230093A88D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8015847218D282DF0093A88D /* Login.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Login.xcdatamodel; sourceTree = "<group>"; };
 		8021B87B18CFDD3A009A0AFC /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8021B87E18CFDD3A009A0AFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8021B88018CFDD3A009A0AFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 				8021B88E18CFDD3A009A0AFC /* AppDelegate.m */,
 				8021B89018CFDD3A009A0AFC /* Images.xcassets */,
 				8021B88518CFDD3A009A0AFC /* Supporting Files */,
+				8015847118D282DF0093A88D /* Login.xcdatamodeld */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				80A7D20818CFE1DB008B5DFE /* LoginFormViewController.m in Sources */,
 				8021B88F18CFDD3A009A0AFC /* AppDelegate.m in Sources */,
 				80A7D20B18CFF0DD008B5DFE /* FormCell.m in Sources */,
+				8015847318D282DF0093A88D /* Login.xcdatamodeld in Sources */,
 				8021B88B18CFDD3A009A0AFC /* main.m in Sources */,
 				80A7D21518D002E3008B5DFE /* TapViewController.m in Sources */,
 				80A7D21218CFFB25008B5DFE /* AppViewController.m in Sources */,
@@ -555,6 +559,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8015847118D282DF0093A88D /* Login.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8015847218D282DF0093A88D /* Login.xcdatamodel */,
+			);
+			currentVersion = 8015847218D282DF0093A88D /* Login.xcdatamodel */;
+			path = Login.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8021B87318CFDD3A009A0AFC /* Project object */;
 }
