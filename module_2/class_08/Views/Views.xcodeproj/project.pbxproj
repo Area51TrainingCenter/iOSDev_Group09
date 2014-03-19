@@ -19,6 +19,8 @@
 		80E6555618D9170400D00D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6553E18D9170400D00D59 /* UIKit.framework */; };
 		80E6555E18D9170400D00D59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E6555C18D9170400D00D59 /* InfoPlist.strings */; };
 		80E6556018D9170400D00D59 /* ViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6555F18D9170400D00D59 /* ViewsTests.m */; };
+		80E6556A18D9174300D00D59 /* Views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E6556918D9174300D00D59 /* Views.storyboard */; };
+		80E6556D18D917C600D00D59 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6556C18D917C600D00D59 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		80E6555B18D9170400D00D59 /* ViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewsTests-Info.plist"; sourceTree = "<group>"; };
 		80E6555D18D9170400D00D59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80E6555F18D9170400D00D59 /* ViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewsTests.m; sourceTree = "<group>"; };
+		80E6556918D9174300D00D59 /* Views.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Views.storyboard; sourceTree = "<group>"; };
+		80E6556B18D917C600D00D59 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		80E6556C18D917C600D00D59 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				80E6554A18D9170400D00D59 /* AppDelegate.m */,
 				80E6554C18D9170400D00D59 /* Images.xcassets */,
 				80E6554118D9170400D00D59 /* Supporting Files */,
+				80E6556918D9174300D00D59 /* Views.storyboard */,
+				80E6556B18D917C600D00D59 /* MasterViewController.h */,
+				80E6556C18D917C600D00D59 /* MasterViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E6556A18D9174300D00D59 /* Views.storyboard in Resources */,
 				80E6554518D9170400D00D59 /* InfoPlist.strings in Resources */,
 				80E6554D18D9170400D00D59 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E6554B18D9170400D00D59 /* AppDelegate.m in Sources */,
+				80E6556D18D917C600D00D59 /* MasterViewController.m in Sources */,
 				80E6554718D9170400D00D59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
