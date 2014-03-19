@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80C010F018D927FA009D8ECF /* UserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C010EF18D927FA009D8ECF /* UserBean.m */; };
 		80E6557B18D91F8200D00D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557A18D91F8200D00D59 /* Foundation.framework */; };
 		80E6557D18D91F8200D00D59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557C18D91F8200D00D59 /* CoreGraphics.framework */; };
 		80E6557F18D91F8200D00D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557E18D91F8200D00D59 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80C010EE18D927FA009D8ECF /* UserBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBean.h; sourceTree = "<group>"; };
+		80C010EF18D927FA009D8ECF /* UserBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBean.m; sourceTree = "<group>"; };
 		80E6557718D91F8200D00D59 /* ParseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E6557A18D91F8200D00D59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80E6557C18D91F8200D00D59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +192,8 @@
 		80E655B118D91FEC00D00D59 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				80C010EE18D927FA009D8ECF /* UserBean.h */,
+				80C010EF18D927FA009D8ECF /* UserBean.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 			files = (
 				80E6559018D91F8200D00D59 /* ParseLogin.xcdatamodeld in Sources */,
 				80E655CF18D923B600D00D59 /* LoginFormCell.m in Sources */,
+				80C010F018D927FA009D8ECF /* UserBean.m in Sources */,
 				80E655BE18D9204A00D00D59 /* MenuLoginViewController.m in Sources */,
 				80E6558D18D91F8200D00D59 /* AppDelegate.m in Sources */,
 				80E655C118D9205B00D00D59 /* FormViewController.m in Sources */,
@@ -559,6 +565,7 @@
 				80E655AB18D91F8200D00D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80E655AC18D91F8200D00D59 /* Build configuration list for PBXNativeTarget "ParseLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +574,7 @@
 				80E655AE18D91F8200D00D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

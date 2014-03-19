@@ -7,12 +7,16 @@
 //
 
 #import "FormViewController.h"
+#import "UserBean.h"
 
 //custom cells
 #import "LoginFormCell.h"
 
 @interface FormViewController ()<UITextFieldDelegate>
-
+@property (nonatomic, strong) UITextField *currentName;
+@property (nonatomic, strong) UITextField *currentEmail;
+@property (nonatomic, strong) UITextField *currentSex;
+@property (nonatomic, strong) UITextField *currentPassword;
 @end
 
 @implementation FormViewController
@@ -60,18 +64,22 @@
                 cell.name.text = @"Nombre";
                 cell.value.placeholder = @"Ingresar";
                 cell.value.delegate=self;
+                self.currentName = cell.value;
             }else if (indexPath.row==1){
                 cell.name.text = @"Email";
                 cell.value.placeholder = @"Ingresar";
                 cell.value.delegate=self;
+                self.currentEmail = cell.value;
             }else if (indexPath.row==2){
                 cell.name.text = @"Sexo";
                 cell.value.placeholder = @"Ingresar";
                 cell.value.delegate=self;
+                self.currentSex = cell.value;
             }else{
                 cell.name.text = @"Clave";
                 cell.value.placeholder = @"Ingresar";
                 cell.value.delegate=self;
+                self.currentPassword = cell.value;
             }
             return cell;
         }else{
@@ -85,10 +93,12 @@
                 cell.name.text = @"Email";
                 cell.value.placeholder = @"Ingresar";
                 cell.value.delegate=self;
+                self.currentEmail = cell.value;
             }else{
                 cell.name.text = @"Clave";
                 cell.value.placeholder = @"Ingresar";
                 cell.value.delegate=self;
+                self.currentPassword = cell.value;
             }
             return cell;
         }else{
@@ -96,5 +106,27 @@
             return b;
         }
     }
+}
+
+#pragma mark -
+#pragma mark Table View Delegate Methods
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.tipo==0) {
+        [self registrarNuevoUsuario];
+    }else{
+        [self ingresarConUsuario];
+    }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)registrarNuevoUsuario{
+    UserBean *n = [UserBean new];
+    n.name = self.currentName.text;
+    n.email = self.currentEmail.text;
+    n.sex = self.currentSex.text;
+}
+- (void)ingresarConUsuario{
+    UserBean *u = [UserBean new];
+    u.email = self.currentEmail.text;
 }
 @end
