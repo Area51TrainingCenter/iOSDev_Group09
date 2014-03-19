@@ -22,6 +22,11 @@
 		80E6559C18D91F8200D00D59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6558018D91F8200D00D59 /* CoreData.framework */; };
 		80E655A418D91F8200D00D59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E655A218D91F8200D00D59 /* InfoPlist.strings */; };
 		80E655A618D91F8200D00D59 /* ParseLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E655A518D91F8200D00D59 /* ParseLoginTests.m */; };
+		80E655B718D91FFA00D00D59 /* Parse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80E655B618D91FFA00D00D59 /* Parse.storyboard */; };
+		80E655BE18D9204A00D00D59 /* MenuLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E655BD18D9204A00D00D59 /* MenuLoginViewController.m */; };
+		80E655C118D9205B00D00D59 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E655C018D9205B00D00D59 /* FormViewController.m */; };
+		80E655C818D921C900D00D59 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E655C718D921C900D00D59 /* AppViewController.m */; };
+		80E655CF18D923B600D00D59 /* LoginFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E655CE18D923B600D00D59 /* LoginFormCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		80E655A118D91F8200D00D59 /* ParseLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParseLoginTests-Info.plist"; sourceTree = "<group>"; };
 		80E655A318D91F8200D00D59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		80E655A518D91F8200D00D59 /* ParseLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseLoginTests.m; sourceTree = "<group>"; };
+		80E655B618D91FFA00D00D59 /* Parse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Parse.storyboard; sourceTree = "<group>"; };
+		80E655BC18D9204A00D00D59 /* MenuLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLoginViewController.h; sourceTree = "<group>"; };
+		80E655BD18D9204A00D00D59 /* MenuLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLoginViewController.m; sourceTree = "<group>"; };
+		80E655BF18D9205B00D00D59 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		80E655C018D9205B00D00D59 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		80E655C618D921C900D00D59 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		80E655C718D921C900D00D59 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		80E655CD18D923B600D00D59 /* LoginFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFormCell.h; sourceTree = "<group>"; };
+		80E655CE18D923B600D00D59 /* LoginFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFormCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,8 @@
 		80E6558218D91F8200D00D59 /* ParseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				80E655AF18D91FEC00D00D59 /* App */,
+				80E655B318D91FEC00D00D59 /* Resources */,
 				80E6558B18D91F8200D00D59 /* AppDelegate.h */,
 				80E6558C18D91F8200D00D59 /* AppDelegate.m */,
 				80E6559118D91F8200D00D59 /* Images.xcassets */,
@@ -151,6 +167,93 @@
 				80E655A218D91F8200D00D59 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80E655AF18D91FEC00D00D59 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				80E655B018D91FEC00D00D59 /* Controller */,
+				80E655B118D91FEC00D00D59 /* Model */,
+				80E655B218D91FEC00D00D59 /* View */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		80E655B018D91FEC00D00D59 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		80E655B118D91FEC00D00D59 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80E655B218D91FEC00D00D59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80E655C518D921C900D00D59 /* Master */,
+				80E655BB18D9204A00D00D59 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80E655B318D91FEC00D00D59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80E655B418D91FEC00D00D59 /* Helpers */,
+				80E655B518D91FEC00D00D59 /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80E655B418D91FEC00D00D59 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		80E655B518D91FEC00D00D59 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80E655B618D91FFA00D00D59 /* Parse.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		80E655BB18D9204A00D00D59 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				80E655CC18D923B600D00D59 /* Cell */,
+				80E655BC18D9204A00D00D59 /* MenuLoginViewController.h */,
+				80E655BD18D9204A00D00D59 /* MenuLoginViewController.m */,
+				80E655BF18D9205B00D00D59 /* FormViewController.h */,
+				80E655C018D9205B00D00D59 /* FormViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		80E655C518D921C900D00D59 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				80E655C618D921C900D00D59 /* AppViewController.h */,
+				80E655C718D921C900D00D59 /* AppViewController.m */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		80E655CC18D923B600D00D59 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80E655CD18D923B600D00D59 /* LoginFormCell.h */,
+				80E655CE18D923B600D00D59 /* LoginFormCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +333,7 @@
 			files = (
 				80E6558718D91F8200D00D59 /* InfoPlist.strings in Resources */,
 				80E6559218D91F8200D00D59 /* Images.xcassets in Resources */,
+				80E655B718D91FFA00D00D59 /* Parse.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +353,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80E6559018D91F8200D00D59 /* ParseLogin.xcdatamodeld in Sources */,
+				80E655CF18D923B600D00D59 /* LoginFormCell.m in Sources */,
+				80E655BE18D9204A00D00D59 /* MenuLoginViewController.m in Sources */,
 				80E6558D18D91F8200D00D59 /* AppDelegate.m in Sources */,
+				80E655C118D9205B00D00D59 /* FormViewController.m in Sources */,
+				80E655C818D921C900D00D59 /* AppViewController.m in Sources */,
 				80E6558918D91F8200D00D59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

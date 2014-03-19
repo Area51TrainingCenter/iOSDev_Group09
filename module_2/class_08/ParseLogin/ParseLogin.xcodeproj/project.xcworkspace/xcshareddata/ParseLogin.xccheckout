@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B14873A0-73F6-42CF-ABE8-35C2C7636F14</string>
+	<string>6070E659-E38F-4C30-9181-36C3884EADC2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ParseLogin</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>81B364EB-37AB-4566-86B8-3A2CE3AF882B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Views</string>
+			<string>ParseLogin</string>
 		</dict>
 	</array>
 </dict>
