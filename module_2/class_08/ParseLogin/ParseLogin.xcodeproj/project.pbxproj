@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		80C010F018D927FA009D8ECF /* UserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C010EF18D927FA009D8ECF /* UserBean.m */; };
+		80C010F218D92EE7009D8ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F118D92EE7009D8ECF /* Parse.framework */; };
+		80C010F418D92F6C009D8ECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F318D92F6C009D8ECF /* AudioToolbox.framework */; };
+		80C010F618D92F74009D8ECF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F518D92F74009D8ECF /* CFNetwork.framework */; };
+		80C010F818D92F7D009D8ECF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F718D92F7D009D8ECF /* CoreLocation.framework */; };
+		80C010FA18D92F89009D8ECF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F918D92F89009D8ECF /* libz.dylib */; };
+		80C010FC18D92F91009D8ECF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010FB18D92F91009D8ECF /* MobileCoreServices.framework */; };
+		80C010FE18D92F9A009D8ECF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010FD18D92F9A009D8ECF /* QuartzCore.framework */; };
+		80C0110018D92FA1009D8ECF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010FF18D92FA1009D8ECF /* Security.framework */; };
+		80C0110218D92FA8009D8ECF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C0110118D92FA8009D8ECF /* StoreKit.framework */; };
+		80C0110418D92FB1009D8ECF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C0110318D92FB1009D8ECF /* SystemConfiguration.framework */; };
 		80E6557B18D91F8200D00D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557A18D91F8200D00D59 /* Foundation.framework */; };
 		80E6557D18D91F8200D00D59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557C18D91F8200D00D59 /* CoreGraphics.framework */; };
 		80E6557F18D91F8200D00D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557E18D91F8200D00D59 /* UIKit.framework */; };
@@ -43,6 +53,16 @@
 /* Begin PBXFileReference section */
 		80C010EE18D927FA009D8ECF /* UserBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBean.h; sourceTree = "<group>"; };
 		80C010EF18D927FA009D8ECF /* UserBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBean.m; sourceTree = "<group>"; };
+		80C010F118D92EE7009D8ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		80C010F318D92F6C009D8ECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		80C010F518D92F74009D8ECF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		80C010F718D92F7D009D8ECF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		80C010F918D92F89009D8ECF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		80C010FB18D92F91009D8ECF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		80C010FD18D92F9A009D8ECF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		80C010FF18D92FA1009D8ECF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		80C0110118D92FA8009D8ECF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		80C0110318D92FB1009D8ECF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		80E6557718D91F8200D00D59 /* ParseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E6557A18D91F8200D00D59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80E6557C18D91F8200D00D59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,10 +97,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C0110418D92FB1009D8ECF /* SystemConfiguration.framework in Frameworks */,
+				80C0110218D92FA8009D8ECF /* StoreKit.framework in Frameworks */,
+				80C0110018D92FA1009D8ECF /* Security.framework in Frameworks */,
+				80C010FE18D92F9A009D8ECF /* QuartzCore.framework in Frameworks */,
+				80C010FC18D92F91009D8ECF /* MobileCoreServices.framework in Frameworks */,
+				80C010FA18D92F89009D8ECF /* libz.dylib in Frameworks */,
+				80C010F818D92F7D009D8ECF /* CoreLocation.framework in Frameworks */,
+				80C010F618D92F74009D8ECF /* CFNetwork.framework in Frameworks */,
+				80C010F418D92F6C009D8ECF /* AudioToolbox.framework in Frameworks */,
 				80E6557D18D91F8200D00D59 /* CoreGraphics.framework in Frameworks */,
 				80E6558118D91F8200D00D59 /* CoreData.framework in Frameworks */,
 				80E6557F18D91F8200D00D59 /* UIKit.framework in Frameworks */,
 				80E6557B18D91F8200D00D59 /* Foundation.framework in Frameworks */,
+				80C010F218D92EE7009D8ECF /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +150,16 @@
 		80E6557918D91F8200D00D59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80C0110318D92FB1009D8ECF /* SystemConfiguration.framework */,
+				80C0110118D92FA8009D8ECF /* StoreKit.framework */,
+				80C010FF18D92FA1009D8ECF /* Security.framework */,
+				80C010FD18D92F9A009D8ECF /* QuartzCore.framework */,
+				80C010FB18D92F91009D8ECF /* MobileCoreServices.framework */,
+				80C010F918D92F89009D8ECF /* libz.dylib */,
+				80C010F718D92F7D009D8ECF /* CoreLocation.framework */,
+				80C010F518D92F74009D8ECF /* CFNetwork.framework */,
+				80C010F318D92F6C009D8ECF /* AudioToolbox.framework */,
+				80C010F118D92EE7009D8ECF /* Parse.framework */,
 				80E6557A18D91F8200D00D59 /* Foundation.framework */,
 				80E6557C18D91F8200D00D59 /* CoreGraphics.framework */,
 				80E6557E18D91F8200D00D59 /* UIKit.framework */,
@@ -483,6 +523,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Franti/Documents/github/newGroup09/iOSDev_Group09/module_2/class_08/ParseLogin,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParseLogin/ParseLogin-Prefix.pch";
 				INFOPLIST_FILE = "ParseLogin/ParseLogin-Info.plist";
@@ -496,6 +540,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Franti/Documents/github/newGroup09/iOSDev_Group09/module_2/class_08/ParseLogin,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParseLogin/ParseLogin-Prefix.pch";
 				INFOPLIST_FILE = "ParseLogin/ParseLogin-Info.plist";

@@ -124,9 +124,33 @@
     n.name = self.currentName.text;
     n.email = self.currentEmail.text;
     n.sex = self.currentSex.text;
+    
+    PFUser *t = [PFUser new];
+    t.email = n.email;
+    t.password = self.currentPassword.text;
+    t.username = n.name;
+    [t setValue:n.sex forKey:@"sexo"];
+    [t signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Se registró");
+            [PFUser logInWithUsernameInBackground:t.username password:self.currentPassword.text block:^(PFUser *user, NSError *error) {
+                NSLog(@"Usuario %@",user);
+            }];
+        }else{
+            NSLog(@"%@",error.localizedDescription);
+        }
+    }];
 }
 - (void)ingresarConUsuario{
     UserBean *u = [UserBean new];
     u.email = self.currentEmail.text;
+    [PFUser logInWithUsernameInBackground:u.email password:self.currentPassword.text block:^(PFUser *user, NSError *error) {
+        if (user) {
+            NSLog(@"Usuario %@",user);
+        }else{
+            NSLog(@"Usuario %@",error.localizedDescription);
+        }
+        
+    }];
 }
 @end
