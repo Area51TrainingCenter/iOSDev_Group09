@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80E6557B18D91F8200D00D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557A18D91F8200D00D59 /* Foundation.framework */; };
+		80E6557D18D91F8200D00D59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557C18D91F8200D00D59 /* CoreGraphics.framework */; };
+		80E6557F18D91F8200D00D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557E18D91F8200D00D59 /* UIKit.framework */; };
+		80E6558118D91F8200D00D59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6558018D91F8200D00D59 /* CoreData.framework */; };
+		80E6558718D91F8200D00D59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E6558518D91F8200D00D59 /* InfoPlist.strings */; };
+		80E6558918D91F8200D00D59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6558818D91F8200D00D59 /* main.m */; };
+		80E6558D18D91F8200D00D59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E6558C18D91F8200D00D59 /* AppDelegate.m */; };
+		80E6559018D91F8200D00D59 /* ParseLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E6558E18D91F8200D00D59 /* ParseLogin.xcdatamodeld */; };
+		80E6559218D91F8200D00D59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E6559118D91F8200D00D59 /* Images.xcassets */; };
+		80E6559918D91F8200D00D59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6559818D91F8200D00D59 /* XCTest.framework */; };
+		80E6559A18D91F8200D00D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557A18D91F8200D00D59 /* Foundation.framework */; };
+		80E6559B18D91F8200D00D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6557E18D91F8200D00D59 /* UIKit.framework */; };
+		80E6559C18D91F8200D00D59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E6558018D91F8200D00D59 /* CoreData.framework */; };
+		80E655A418D91F8200D00D59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80E655A218D91F8200D00D59 /* InfoPlist.strings */; };
+		80E655A618D91F8200D00D59 /* ParseLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E655A518D91F8200D00D59 /* ParseLoginTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80E6559D18D91F8200D00D59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80E6556F18D91F8200D00D59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80E6557618D91F8200D00D59;
+			remoteInfo = ParseLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80E6557718D91F8200D00D59 /* ParseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E6557A18D91F8200D00D59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80E6557C18D91F8200D00D59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		80E6557E18D91F8200D00D59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		80E6558018D91F8200D00D59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80E6558418D91F8200D00D59 /* ParseLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParseLogin-Info.plist"; sourceTree = "<group>"; };
+		80E6558618D91F8200D00D59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80E6558818D91F8200D00D59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80E6558A18D91F8200D00D59 /* ParseLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParseLogin-Prefix.pch"; sourceTree = "<group>"; };
+		80E6558B18D91F8200D00D59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80E6558C18D91F8200D00D59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80E6558F18D91F8200D00D59 /* ParseLogin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParseLogin.xcdatamodel; sourceTree = "<group>"; };
+		80E6559118D91F8200D00D59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		80E6559718D91F8200D00D59 /* ParseLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E6559818D91F8200D00D59 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		80E655A118D91F8200D00D59 /* ParseLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParseLoginTests-Info.plist"; sourceTree = "<group>"; };
+		80E655A318D91F8200D00D59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		80E655A518D91F8200D00D59 /* ParseLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseLoginTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80E6557418D91F8200D00D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E6557D18D91F8200D00D59 /* CoreGraphics.framework in Frameworks */,
+				80E6558118D91F8200D00D59 /* CoreData.framework in Frameworks */,
+				80E6557F18D91F8200D00D59 /* UIKit.framework in Frameworks */,
+				80E6557B18D91F8200D00D59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E6559418D91F8200D00D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E6559918D91F8200D00D59 /* XCTest.framework in Frameworks */,
+				80E6559C18D91F8200D00D59 /* CoreData.framework in Frameworks */,
+				80E6559B18D91F8200D00D59 /* UIKit.framework in Frameworks */,
+				80E6559A18D91F8200D00D59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80E6556E18D91F8200D00D59 = {
+			isa = PBXGroup;
+			children = (
+				80E6558218D91F8200D00D59 /* ParseLogin */,
+				80E6559F18D91F8200D00D59 /* ParseLoginTests */,
+				80E6557918D91F8200D00D59 /* Frameworks */,
+				80E6557818D91F8200D00D59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80E6557818D91F8200D00D59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80E6557718D91F8200D00D59 /* ParseLogin.app */,
+				80E6559718D91F8200D00D59 /* ParseLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80E6557918D91F8200D00D59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E6557A18D91F8200D00D59 /* Foundation.framework */,
+				80E6557C18D91F8200D00D59 /* CoreGraphics.framework */,
+				80E6557E18D91F8200D00D59 /* UIKit.framework */,
+				80E6558018D91F8200D00D59 /* CoreData.framework */,
+				80E6559818D91F8200D00D59 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80E6558218D91F8200D00D59 /* ParseLogin */ = {
+			isa = PBXGroup;
+			children = (
+				80E6558B18D91F8200D00D59 /* AppDelegate.h */,
+				80E6558C18D91F8200D00D59 /* AppDelegate.m */,
+				80E6559118D91F8200D00D59 /* Images.xcassets */,
+				80E6558E18D91F8200D00D59 /* ParseLogin.xcdatamodeld */,
+				80E6558318D91F8200D00D59 /* Supporting Files */,
+			);
+			path = ParseLogin;
+			sourceTree = "<group>";
+		};
+		80E6558318D91F8200D00D59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80E6558418D91F8200D00D59 /* ParseLogin-Info.plist */,
+				80E6558518D91F8200D00D59 /* InfoPlist.strings */,
+				80E6558818D91F8200D00D59 /* main.m */,
+				80E6558A18D91F8200D00D59 /* ParseLogin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80E6559F18D91F8200D00D59 /* ParseLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				80E655A518D91F8200D00D59 /* ParseLoginTests.m */,
+				80E655A018D91F8200D00D59 /* Supporting Files */,
+			);
+			path = ParseLoginTests;
+			sourceTree = "<group>";
+		};
+		80E655A018D91F8200D00D59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				80E655A118D91F8200D00D59 /* ParseLoginTests-Info.plist */,
+				80E655A218D91F8200D00D59 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80E6557618D91F8200D00D59 /* ParseLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E655A918D91F8200D00D59 /* Build configuration list for PBXNativeTarget "ParseLogin" */;
+			buildPhases = (
+				80E6557318D91F8200D00D59 /* Sources */,
+				80E6557418D91F8200D00D59 /* Frameworks */,
+				80E6557518D91F8200D00D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseLogin;
+			productName = ParseLogin;
+			productReference = 80E6557718D91F8200D00D59 /* ParseLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80E6559618D91F8200D00D59 /* ParseLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80E655AC18D91F8200D00D59 /* Build configuration list for PBXNativeTarget "ParseLoginTests" */;
+			buildPhases = (
+				80E6559318D91F8200D00D59 /* Sources */,
+				80E6559418D91F8200D00D59 /* Frameworks */,
+				80E6559518D91F8200D00D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80E6559E18D91F8200D00D59 /* PBXTargetDependency */,
+			);
+			name = ParseLoginTests;
+			productName = ParseLoginTests;
+			productReference = 80E6559718D91F8200D00D59 /* ParseLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80E6556F18D91F8200D00D59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Franti Saúl Huamán Mera";
+				TargetAttributes = {
+					80E6559618D91F8200D00D59 = {
+						TestTargetID = 80E6557618D91F8200D00D59;
+					};
+				};
+			};
+			buildConfigurationList = 80E6557218D91F8200D00D59 /* Build configuration list for PBXProject "ParseLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80E6556E18D91F8200D00D59;
+			productRefGroup = 80E6557818D91F8200D00D59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80E6557618D91F8200D00D59 /* ParseLogin */,
+				80E6559618D91F8200D00D59 /* ParseLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80E6557518D91F8200D00D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E6558718D91F8200D00D59 /* InfoPlist.strings in Resources */,
+				80E6559218D91F8200D00D59 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E6559518D91F8200D00D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E655A418D91F8200D00D59 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80E6557318D91F8200D00D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E6559018D91F8200D00D59 /* ParseLogin.xcdatamodeld in Sources */,
+				80E6558D18D91F8200D00D59 /* AppDelegate.m in Sources */,
+				80E6558918D91F8200D00D59 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E6559318D91F8200D00D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E655A618D91F8200D00D59 /* ParseLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80E6559E18D91F8200D00D59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80E6557618D91F8200D00D59 /* ParseLogin */;
+			targetProxy = 80E6559D18D91F8200D00D59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80E6558518D91F8200D00D59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E6558618D91F8200D00D59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		80E655A218D91F8200D00D59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80E655A318D91F8200D00D59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80E655A718D91F8200D00D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80E655A818D91F8200D00D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80E655AA18D91F8200D00D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParseLogin/ParseLogin-Prefix.pch";
+				INFOPLIST_FILE = "ParseLogin/ParseLogin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		80E655AB18D91F8200D00D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParseLogin/ParseLogin-Prefix.pch";
+				INFOPLIST_FILE = "ParseLogin/ParseLogin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		80E655AD18D91F8200D00D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParseLogin.app/ParseLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParseLogin/ParseLogin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParseLoginTests/ParseLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		80E655AE18D91F8200D00D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParseLogin.app/ParseLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParseLogin/ParseLogin-Prefix.pch";
+				INFOPLIST_FILE = "ParseLoginTests/ParseLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E6557218D91F8200D00D59 /* Build configuration list for PBXProject "ParseLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E655A718D91F8200D00D59 /* Debug */,
+				80E655A818D91F8200D00D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E655A918D91F8200D00D59 /* Build configuration list for PBXNativeTarget "ParseLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E655AA18D91F8200D00D59 /* Debug */,
+				80E655AB18D91F8200D00D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80E655AC18D91F8200D00D59 /* Build configuration list for PBXNativeTarget "ParseLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E655AD18D91F8200D00D59 /* Debug */,
+				80E655AE18D91F8200D00D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80E6558E18D91F8200D00D59 /* ParseLogin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80E6558F18D91F8200D00D59 /* ParseLogin.xcdatamodel */,
+			);
+			currentVersion = 80E6558F18D91F8200D00D59 /* ParseLogin.xcdatamodel */;
+			path = ParseLogin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80E6556F18D91F8200D00D59 /* Project object */;
+}
