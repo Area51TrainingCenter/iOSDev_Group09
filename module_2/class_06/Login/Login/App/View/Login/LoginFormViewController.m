@@ -70,7 +70,6 @@
     return c;
 }
 - (IBAction)doneButton:(id)sender{
-    
     /*
     UsuarioBean *nuevo = [[UsuarioBean alloc] init];
     nuevo.nombre = @"Carlos";

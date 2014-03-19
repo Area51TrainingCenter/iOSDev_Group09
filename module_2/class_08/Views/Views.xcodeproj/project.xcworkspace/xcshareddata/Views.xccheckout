@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A5672A8E-CE15-4C78-94B2-C274E5B3AC85</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Views</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>81B364EB-37AB-4566-86B8-3A2CE3AF882B</key>
+		<string>https://github.com/Area51TrainingCenter/iOSDev_Group09.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>module_2/class_08/Views/Views.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81B364EB-37AB-4566-86B8-3A2CE3AF882B</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Area51TrainingCenter/iOSDev_Group09.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81B364EB-37AB-4566-86B8-3A2CE3AF882B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81B364EB-37AB-4566-86B8-3A2CE3AF882B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSDev_Group09</string>
+		</dict>
+	</array>
+</dict>
+</plist>

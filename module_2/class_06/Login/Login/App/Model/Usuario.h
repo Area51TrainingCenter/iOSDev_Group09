@@ -15,5 +15,4 @@
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) NSString * nombre;
 @property (nonatomic, retain) NSString * edad;
-
 @end
