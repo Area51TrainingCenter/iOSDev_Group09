@@ -20,4 +20,13 @@
     }
     bloque(datos);
 }
++ (void)bloqueUno:(void(^)(NSArray *miArray, NSString *miString))bloqueuno bloqueDos:(void(^)(NSError *error, NSString *miString))bloqueDos{
+    
+    BOOL bloque1=NO;
+    if (bloque1) {
+        bloqueuno([NSArray arrayWithObject:@"dato"],@"bloque 1");
+    }else{
+        bloqueDos(nil, @"bloque 2");
+    }
+}
 @end

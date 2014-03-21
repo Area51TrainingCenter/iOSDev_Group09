@@ -30,10 +30,16 @@
     [Area51Request ingresarNombre:@"Hernan" password:@"holamundo" email:@"hernan@gmail.com" conBloque:^(BOOL exito, NSString *mensaje) {
         NSLog(@"%@",mensaje);
         NSLog(exito?@"YES":@"NO");
-    }];*/
+    }];
     
     [Area51Request crearArregloCondatos:^(NSArray *miArreglo) {
         NSLog(@"%@",miArreglo);
+    }];*/
+    
+    [Area51Request bloqueUno:^(NSArray *miArray, NSString *miString) {
+        NSLog(@"%@",miArray);
+    } bloqueDos:^(NSError *error, NSString *miString) {
+        NSLog(@"%@",miString);
     }];
 }
 - (void)didReceiveMemoryWarning{
