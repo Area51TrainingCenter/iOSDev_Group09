@@ -7,6 +7,7 @@
 //
 
 #import "NewViewController.h"
+#import "Area51Request.h"
 
 @interface NewViewController ()
 
@@ -30,5 +31,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma mark Table View Delegate Methods
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section==1) {
+        [Area51Request crearNuevoRegistro:self.nombre.text precio:self.precio.text conBloque:^(BOOL condicion, NSString *message) {
+            if (condicion) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }else{
+                [[[UIAlertView alloc] initWithTitle:@"Oops!" message:message delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+            }
+        }];
+    }
+}
+
+#pragma mark -
+#pragma mark IBAction Method
+- (IBAction)cerrarBoton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

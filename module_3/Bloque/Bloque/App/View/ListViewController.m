@@ -34,13 +34,13 @@
     
     [Area51Request crearArregloCondatos:^(NSArray *miArreglo) {
         NSLog(@"%@",miArreglo);
-    }];*/
+    }];
     
     [Area51Request bloqueUno:^(NSArray *miArray, NSString *miString) {
         NSLog(@"%@",miArray);
     } bloqueDos:^(NSError *error, NSString *miString) {
         NSLog(@"%@",miString);
-    }];
+    }];*/
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];

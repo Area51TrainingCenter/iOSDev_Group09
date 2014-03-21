@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface NewViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextField *nombre;
+@property (weak, nonatomic) IBOutlet UITextField *precio;
+- (IBAction)cerrarBoton:(id)sender;
 
 @end

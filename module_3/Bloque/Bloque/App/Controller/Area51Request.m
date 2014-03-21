@@ -29,4 +29,7 @@
         bloqueDos(nil, @"bloque 2");
     }
 }
++ (void)crearNuevoRegistro:(NSString *)nombre precio:(NSString *)precio conBloque:(void(^)(BOOL condicion, NSString *message))bloque{
+    
+}
 @end
