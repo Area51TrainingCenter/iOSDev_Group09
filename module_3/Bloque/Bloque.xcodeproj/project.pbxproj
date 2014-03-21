@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		800665B618DBBC9C00325498 /* Bloque.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800665B518DBBC9C00325498 /* Bloque.storyboard */; };
+		800665B818DBBD1B00325498 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665B718DBBD1B00325498 /* Parse.framework */; };
+		800665BA18DBBD4500325498 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665B918DBBD4500325498 /* AudioToolbox.framework */; };
+		800665BC18DBBD4D00325498 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665BB18DBBD4D00325498 /* CFNetwork.framework */; };
+		800665BE18DBBD5400325498 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665BD18DBBD5400325498 /* CoreLocation.framework */; };
+		800665C018DBBD5D00325498 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665BF18DBBD5D00325498 /* libz.dylib */; };
+		800665C218DBBD6400325498 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C118DBBD6400325498 /* MobileCoreServices.framework */; };
+		800665C418DBBD8600325498 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C318DBBD8600325498 /* QuartzCore.framework */; };
+		800665C618DBBD8C00325498 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C518DBBD8C00325498 /* Security.framework */; };
+		800665C818DBBD9200325498 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C718DBBD9200325498 /* StoreKit.framework */; };
+		800665CA18DBBD9700325498 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C918DBBD9700325498 /* SystemConfiguration.framework */; };
 		80EE695F18DBBC0B0051D379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE695E18DBBC0B0051D379 /* Foundation.framework */; };
 		80EE696118DBBC0B0051D379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE696018DBBC0B0051D379 /* CoreGraphics.framework */; };
 		80EE696318DBBC0B0051D379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE696218DBBC0B0051D379 /* UIKit.framework */; };
@@ -37,6 +47,16 @@
 
 /* Begin PBXFileReference section */
 		800665B518DBBC9C00325498 /* Bloque.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bloque.storyboard; sourceTree = "<group>"; };
+		800665B718DBBD1B00325498 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		800665B918DBBD4500325498 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		800665BB18DBBD4D00325498 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		800665BD18DBBD5400325498 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		800665BF18DBBD5D00325498 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		800665C118DBBD6400325498 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		800665C318DBBD8600325498 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		800665C518DBBD8C00325498 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		800665C718DBBD9200325498 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		800665C918DBBD9700325498 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		80EE695B18DBBC0B0051D379 /* Bloque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EE695E18DBBC0B0051D379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EE696018DBBC0B0051D379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,10 +82,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800665CA18DBBD9700325498 /* SystemConfiguration.framework in Frameworks */,
+				800665C818DBBD9200325498 /* StoreKit.framework in Frameworks */,
+				800665C618DBBD8C00325498 /* Security.framework in Frameworks */,
+				800665C418DBBD8600325498 /* QuartzCore.framework in Frameworks */,
+				800665C218DBBD6400325498 /* MobileCoreServices.framework in Frameworks */,
+				800665C018DBBD5D00325498 /* libz.dylib in Frameworks */,
+				800665BE18DBBD5400325498 /* CoreLocation.framework in Frameworks */,
+				800665BC18DBBD4D00325498 /* CFNetwork.framework in Frameworks */,
+				800665BA18DBBD4500325498 /* AudioToolbox.framework in Frameworks */,
 				80EE696118DBBC0B0051D379 /* CoreGraphics.framework in Frameworks */,
 				80EE696518DBBC0B0051D379 /* CoreData.framework in Frameworks */,
 				80EE696318DBBC0B0051D379 /* UIKit.framework in Frameworks */,
 				80EE695F18DBBC0B0051D379 /* Foundation.framework in Frameworks */,
+				800665B818DBBD1B00325498 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +182,16 @@
 		80EE695D18DBBC0B0051D379 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				800665C918DBBD9700325498 /* SystemConfiguration.framework */,
+				800665C718DBBD9200325498 /* StoreKit.framework */,
+				800665C518DBBD8C00325498 /* Security.framework */,
+				800665C318DBBD8600325498 /* QuartzCore.framework */,
+				800665C118DBBD6400325498 /* MobileCoreServices.framework */,
+				800665BF18DBBD5D00325498 /* libz.dylib */,
+				800665BD18DBBD5400325498 /* CoreLocation.framework */,
+				800665BB18DBBD4D00325498 /* CFNetwork.framework */,
+				800665B918DBBD4500325498 /* AudioToolbox.framework */,
+				800665B718DBBD1B00325498 /* Parse.framework */,
 				80EE695E18DBBC0B0051D379 /* Foundation.framework */,
 				80EE696018DBBC0B0051D379 /* CoreGraphics.framework */,
 				80EE696218DBBC0B0051D379 /* UIKit.framework */,
@@ -421,6 +461,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Franti/Documents/github/newGroup09/iOSDev_Group09/module_3/Bloque,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bloque/Bloque-Prefix.pch";
 				INFOPLIST_FILE = "Bloque/Bloque-Info.plist";
@@ -434,6 +478,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Franti/Documents/github/newGroup09/iOSDev_Group09/module_3/Bloque,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bloque/Bloque-Prefix.pch";
 				INFOPLIST_FILE = "Bloque/Bloque-Info.plist";
