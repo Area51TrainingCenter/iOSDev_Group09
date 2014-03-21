@@ -18,6 +18,8 @@
 		800665C618DBBD8C00325498 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C518DBBD8C00325498 /* Security.framework */; };
 		800665C818DBBD9200325498 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C718DBBD9200325498 /* StoreKit.framework */; };
 		800665CA18DBBD9700325498 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C918DBBD9700325498 /* SystemConfiguration.framework */; };
+		800665CD18DBBED200325498 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800665CC18DBBED200325498 /* ListViewController.m */; };
+		800665D018DBBEDB00325498 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800665CF18DBBEDB00325498 /* NewViewController.m */; };
 		80EE695F18DBBC0B0051D379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE695E18DBBC0B0051D379 /* Foundation.framework */; };
 		80EE696118DBBC0B0051D379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE696018DBBC0B0051D379 /* CoreGraphics.framework */; };
 		80EE696318DBBC0B0051D379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE696218DBBC0B0051D379 /* UIKit.framework */; };
@@ -57,6 +59,10 @@
 		800665C518DBBD8C00325498 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		800665C718DBBD9200325498 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		800665C918DBBD9700325498 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		800665CB18DBBED200325498 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		800665CC18DBBED200325498 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		800665CE18DBBEDB00325498 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		800665CF18DBBEDB00325498 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 		80EE695B18DBBC0B0051D379 /* Bloque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EE695E18DBBC0B0051D379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EE696018DBBC0B0051D379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,6 +146,10 @@
 		800665B218DBBC6B00325498 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				800665CB18DBBED200325498 /* ListViewController.h */,
+				800665CC18DBBED200325498 /* ListViewController.m */,
+				800665CE18DBBEDB00325498 /* NewViewController.h */,
+				800665CF18DBBEDB00325498 /* NewViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +352,8 @@
 			files = (
 				80EE697418DBBC0B0051D379 /* Bloque.xcdatamodeld in Sources */,
 				80EE697118DBBC0B0051D379 /* AppDelegate.m in Sources */,
+				800665D018DBBEDB00325498 /* NewViewController.m in Sources */,
+				800665CD18DBBED200325498 /* ListViewController.m in Sources */,
 				80EE696D18DBBC0B0051D379 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
