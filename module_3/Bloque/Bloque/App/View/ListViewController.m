@@ -8,8 +8,9 @@
 
 #import "ListViewController.h"
 #import "Area51Request.h"
+#import "NewViewController.h"
 
-@interface ListViewController ()
+@interface ListViewController ()<NewViewControllerDelegate>
 
 @end
 
@@ -46,6 +47,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UINavigationController *nav = segue.destinationViewController;
+    NewViewController *n = (NewViewController *)nav.topViewController;
+    n.delegate=self;
+}
 
 #pragma mark -
 #pragma mark - Table View Data Source Methods
@@ -61,5 +67,11 @@
     // Configure the cell...
     
     return cell;
+}
+
+#pragma mark -
+#pragma mark New View Delegate Method
+- (void)actualizarDatos{
+    //llamar a Parse para traer datos
 }
 @end

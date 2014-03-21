@@ -39,7 +39,9 @@
     if (indexPath.section==1) {
         [Area51Request crearNuevoRegistro:self.nombre.text precio:self.precio.text conBloque:^(BOOL condicion, NSString *message) {
             if (condicion) {
-                [self dismissViewControllerAnimated:YES completion:nil];
+                [self dismissViewControllerAnimated:YES completion:^{
+                    [self.delegate actualizarDatos];
+                }];
             }else{
                 [[[UIAlertView alloc] initWithTitle:@"Oops!" message:message delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
             }

@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol NewViewControllerDelegate <NSObject>
+- (void)actualizarDatos;
+@end
+
+
 @interface NewViewController : UITableViewController
+@property (nonatomic, weak) id<NewViewControllerDelegate>delegate;
 @property (weak, nonatomic) IBOutlet UITextField *nombre;
 @property (weak, nonatomic) IBOutlet UITextField *precio;
 - (IBAction)cerrarBoton:(id)sender;
