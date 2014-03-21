@@ -39,4 +39,7 @@
         bloque(succeeded, error.localizedDescription);
     }];
 }
++ (void)obtenerListaDePlatos:(void(^)(NSArray *platos, BOOL condicion))bloque{
+    
+}
 @end

@@ -11,7 +11,7 @@
 #import "NewViewController.h"
 
 @interface ListViewController ()<NewViewControllerDelegate>
-
+@property (nonatomic, strong) NSArray *platos;
 @end
 
 @implementation ListViewController
@@ -56,13 +56,16 @@
 #pragma mark -
 #pragma mark - Table View Data Source Methods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
+    return [self.platos count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCell" forIndexPath:indexPath];
+    
+    PFObject *b = [self.platos objectAtIndex:indexPath.row];
+    cell.textLabel.text = [b objectForKey:@"nombre_plato"];
     
     // Configure the cell...
     
@@ -73,5 +76,13 @@
 #pragma mark New View Delegate Method
 - (void)actualizarDatos{
     //llamar a Parse para traer datos
+    [Area51Request obtenerListaDePlatos:^(NSArray *platos, BOOL condicion) {
+        if (condicion) {
+            self.platos = platos;
+            [self.tableView reloadData];
+        }else{
+            
+        }
+    }];
 }
 @end
