@@ -31,5 +31,12 @@
 }
 + (void)crearNuevoRegistro:(NSString *)nombre precio:(NSString *)precio conBloque:(void(^)(BOOL condicion, NSString *message))bloque{
     
+    PFObject *menu = [PFObject objectWithClassName:@"Menu"];
+    [menu setValue:nombre forKey:@"nombre_plato"];
+    [menu setValue:precio forKey:@"precio_plato"];
+    
+    [menu saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        bloque(succeeded, error.localizedDescription);
+    }];
 }
 @end
