@@ -26,10 +26,14 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
+    /*
     [Area51Request ingresarNombre:@"Hernan" password:@"holamundo" email:@"hernan@gmail.com" conBloque:^(BOOL exito, NSString *mensaje) {
         NSLog(@"%@",mensaje);
         NSLog(exito?@"YES":@"NO");
+    }];*/
+    
+    [Area51Request crearArregloCondatos:^(NSArray *miArreglo) {
+        NSLog(@"%@",miArreglo);
     }];
 }
 - (void)didReceiveMemoryWarning{

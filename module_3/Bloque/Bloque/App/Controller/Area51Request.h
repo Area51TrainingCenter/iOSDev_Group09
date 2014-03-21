@@ -10,5 +10,6 @@
 
 @interface Area51Request : NSObject
 + (void)ingresarNombre:(NSString *)nombre password:(NSString *)password email:(NSString *)email conBloque:(void(^)(BOOL exito, NSString *mensaje))bloque;
++ (void)crearArregloCondatos:(void(^)(NSArray *miArreglo))bloque;
 
 @end

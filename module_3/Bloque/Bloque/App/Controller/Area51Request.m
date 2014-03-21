@@ -13,4 +13,11 @@
 + (void)ingresarNombre:(NSString *)nombre password:(NSString *)password email:(NSString *)email conBloque:(void(^)(BOOL exito, NSString *mensaje))bloque{
     bloque(YES, @"Se logeo con exito");
 }
++ (void)crearArregloCondatos:(void(^)(NSArray *miArreglo))bloque{
+    NSMutableArray *datos = [NSMutableArray array];
+    for (int i=0; i<6; i++) {
+        [datos addObject:[NSString stringWithFormat:@"Area %i",i]];
+    }
+    bloque(datos);
+}
 @end
