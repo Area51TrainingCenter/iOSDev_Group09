@@ -27,6 +27,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self actualizarDatos];
     /*
     [Area51Request ingresarNombre:@"Hernan" password:@"holamundo" email:@"hernan@gmail.com" conBloque:^(BOOL exito, NSString *mensaje) {
         NSLog(@"%@",mensaje);

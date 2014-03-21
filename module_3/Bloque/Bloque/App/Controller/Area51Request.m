@@ -40,6 +40,13 @@
     }];
 }
 + (void)obtenerListaDePlatos:(void(^)(NSArray *platos, BOOL condicion))bloque{
-    
+    PFQuery *q = [PFQuery queryWithClassName:@"Menu"];
+    [q findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            bloque(objects, YES);
+        }else{
+            bloque(nil, NO);
+        }
+    }];
 }
 @end
