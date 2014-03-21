@@ -8,6 +8,7 @@
 
 #import "MenuLoginViewController.h"
 #import "FormViewController.h"
+#import "Area51Request.h"
 
 @interface MenuLoginViewController ()
 
@@ -26,7 +27,10 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [Area51Request ingresarNombre:@"Hernan" password:@"holamundo" email:@"hernan@gmail.com" conBloque:^(BOOL exito, NSString *mensaje) {
+        
+    }];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];

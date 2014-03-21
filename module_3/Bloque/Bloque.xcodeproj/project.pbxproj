@@ -20,6 +20,7 @@
 		800665CA18DBBD9700325498 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800665C918DBBD9700325498 /* SystemConfiguration.framework */; };
 		800665CD18DBBED200325498 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800665CC18DBBED200325498 /* ListViewController.m */; };
 		800665D018DBBEDB00325498 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800665CF18DBBEDB00325498 /* NewViewController.m */; };
+		800665D618DBC4E200325498 /* Area51Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 800665D518DBC4E200325498 /* Area51Request.m */; };
 		80EE695F18DBBC0B0051D379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE695E18DBBC0B0051D379 /* Foundation.framework */; };
 		80EE696118DBBC0B0051D379 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE696018DBBC0B0051D379 /* CoreGraphics.framework */; };
 		80EE696318DBBC0B0051D379 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE696218DBBC0B0051D379 /* UIKit.framework */; };
@@ -63,6 +64,8 @@
 		800665CC18DBBED200325498 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		800665CE18DBBEDB00325498 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		800665CF18DBBEDB00325498 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		800665D418DBC4E200325498 /* Area51Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area51Request.h; sourceTree = "<group>"; };
+		800665D518DBC4E200325498 /* Area51Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area51Request.m; sourceTree = "<group>"; };
 		80EE695B18DBBC0B0051D379 /* Bloque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EE695E18DBBC0B0051D379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80EE696018DBBC0B0051D379 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 		800665B018DBBC6B00325498 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				800665D418DBC4E200325498 /* Area51Request.h */,
+				800665D518DBC4E200325498 /* Area51Request.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				80EE697118DBBC0B0051D379 /* AppDelegate.m in Sources */,
 				800665D018DBBEDB00325498 /* NewViewController.m in Sources */,
 				800665CD18DBBED200325498 /* ListViewController.m in Sources */,
+				800665D618DBC4E200325498 /* Area51Request.m in Sources */,
 				80EE696D18DBBC0B0051D379 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "Area51Request.h"
 
 @interface ListViewController ()
 
@@ -25,6 +26,11 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    [Area51Request ingresarNombre:@"Hernan" password:@"holamundo" email:@"hernan@gmail.com" conBloque:^(BOOL exito, NSString *mensaje) {
+        NSLog(@"%@",mensaje);
+        NSLog(exito?@"YES":@"NO");
+    }];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];

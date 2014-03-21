@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800665D318DBC26700325498 /* Area51Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 800665D218DBC26700325498 /* Area51Request.m */; };
 		80C010F018D927FA009D8ECF /* UserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C010EF18D927FA009D8ECF /* UserBean.m */; };
 		80C010F218D92EE7009D8ECF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F118D92EE7009D8ECF /* Parse.framework */; };
 		80C010F418D92F6C009D8ECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C010F318D92F6C009D8ECF /* AudioToolbox.framework */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		800665D118DBC26700325498 /* Area51Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area51Request.h; sourceTree = "<group>"; };
+		800665D218DBC26700325498 /* Area51Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area51Request.m; sourceTree = "<group>"; };
 		80C010EE18D927FA009D8ECF /* UserBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBean.h; sourceTree = "<group>"; };
 		80C010EF18D927FA009D8ECF /* UserBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBean.m; sourceTree = "<group>"; };
 		80C010F118D92EE7009D8ECF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 		80E655B018D91FEC00D00D59 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				800665D118DBC26700325498 /* Area51Request.h */,
+				800665D218DBC26700325498 /* Area51Request.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				80E655CF18D923B600D00D59 /* LoginFormCell.m in Sources */,
 				80C010F018D927FA009D8ECF /* UserBean.m in Sources */,
 				80E655BE18D9204A00D00D59 /* MenuLoginViewController.m in Sources */,
+				800665D318DBC26700325498 /* Area51Request.m in Sources */,
 				80E6558D18D91F8200D00D59 /* AppDelegate.m in Sources */,
 				80E655C118D9205B00D00D59 /* FormViewController.m in Sources */,
 				80E655C818D921C900D00D59 /* AppViewController.m in Sources */,
