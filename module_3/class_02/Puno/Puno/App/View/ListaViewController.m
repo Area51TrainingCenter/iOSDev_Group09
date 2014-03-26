@@ -11,6 +11,7 @@
 #import "DetalleViewController.h"
 
 #import "LocalCell.h"
+#import "FilaSeleccionada.h"
 
 @interface ListaViewController ()<NuevoViewControllerDelegate, LocalCellDelegate>
 @property (nonatomic, strong) NSArray *listaDeRestaurantes;
@@ -53,6 +54,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     LocalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"localCell" forIndexPath:indexPath];
+    cell.selectedBackgroundView = [FilaSeleccionada new];
     cell.delegate = self;
     PFObject *bean = [self.listaDeRestaurantes objectAtIndex:indexPath.row];
     cell.nombre_restaurante.text =[bean objectForKey:@"restaurant_name"];

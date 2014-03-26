@@ -39,6 +39,7 @@
 		80B6A52D18E26073006F9209 /* PunoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B6A52C18E26073006F9209 /* PunoRequest.m */; };
 		80B6A53018E26095006F9209 /* RestauranteBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B6A52F18E26095006F9209 /* RestauranteBean.m */; };
 		80B6A53318E2700B006F9209 /* DetalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B6A53218E2700B006F9209 /* DetalleViewController.m */; };
+		80B6A53618E2760E006F9209 /* FilaSeleccionada.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B6A53518E2760E006F9209 /* FilaSeleccionada.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		80B6A52F18E26095006F9209 /* RestauranteBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestauranteBean.m; sourceTree = "<group>"; };
 		80B6A53118E2700B006F9209 /* DetalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleViewController.h; sourceTree = "<group>"; };
 		80B6A53218E2700B006F9209 /* DetalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleViewController.m; sourceTree = "<group>"; };
+		80B6A53418E2760E006F9209 /* FilaSeleccionada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilaSeleccionada.h; sourceTree = "<group>"; };
+		80B6A53518E2760E006F9209 /* FilaSeleccionada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilaSeleccionada.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,8 @@
 				80B6A51518E25B1C006F9209 /* LocalCell.m */,
 				80B6A53118E2700B006F9209 /* DetalleViewController.h */,
 				80B6A53218E2700B006F9209 /* DetalleViewController.m */,
+				80B6A53418E2760E006F9209 /* FilaSeleccionada.h */,
+				80B6A53518E2760E006F9209 /* FilaSeleccionada.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 			files = (
 				80B6A53018E26095006F9209 /* RestauranteBean.m in Sources */,
 				80B6A51018E25874006F9209 /* ListaViewController.m in Sources */,
+				80B6A53618E2760E006F9209 /* FilaSeleccionada.m in Sources */,
 				80B6A52D18E26073006F9209 /* PunoRequest.m in Sources */,
 				80B6A53318E2700B006F9209 /* DetalleViewController.m in Sources */,
 				80B6A4E418E2576E006F9209 /* AppDelegate.m in Sources */,
