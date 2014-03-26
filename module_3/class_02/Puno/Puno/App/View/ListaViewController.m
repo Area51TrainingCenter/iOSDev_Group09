@@ -8,10 +8,11 @@
 
 #import "ListaViewController.h"
 #import "NuevoViewController.h"
+#import "DetalleViewController.h"
 
 #import "LocalCell.h"
 
-@interface ListaViewController ()<NuevoViewControllerDelegate>
+@interface ListaViewController ()<NuevoViewControllerDelegate, LocalCellDelegate>
 @property (nonatomic, strong) NSArray *listaDeRestaurantes;
 @end
 
@@ -51,11 +52,12 @@
     return [self.listaDeRestaurantes count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //
     LocalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"localCell" forIndexPath:indexPath];
+    cell.delegate = self;
     PFObject *bean = [self.listaDeRestaurantes objectAtIndex:indexPath.row];
     cell.nombre_restaurante.text =[bean objectForKey:@"restaurant_name"];
     cell.precio_restaurante.text = [bean objectForKey:@"restaurant_address"];
+    cell.botonQueMuestraFoto.tag= indexPath.row;
     return cell;
 }
 
@@ -71,11 +73,23 @@
     [PunoRequest traerListaDeRestaurantes:^(NSArray *restaurantes, NSError *error) {
         if (!error) {
             self.listaDeRestaurantes = restaurantes;
+            //NSLog(@"%@",self.listaDeRestaurantes);
             [self.tableView reloadData];
         }else{
             [[[UIAlertView alloc] initWithTitle:@"Parse" message:@"No se pudo obtener la lista de restaurantes" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
         }
     }];
+}
+
+#pragma mark -
+#pragma mark Local Cell Delegate Method
+- (void)mostrarFotoEnGrande:(id)sender{
+    UIButton *actualBoton = (UIButton *)sender;
+    DetalleViewController *ty = [self.storyboard instantiateViewControllerWithIdentifier:@"detalleSegue"];
+    ty.de = [self.listaDeRestaurantes objectAtIndex:actualBoton.tag];
+    [self.navigationController pushViewController:ty animated:YES];
     
+    
+    NSLog(@"Acción en el UITableViewController");
 }
 @end

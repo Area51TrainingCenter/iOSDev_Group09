@@ -40,15 +40,13 @@
     restaurant.name = self.cajaNombre.text;
     restaurant.address = self.cajaDirección.text;
     restaurant.foodStyle = self.cajaTipoComida.text;
-    
-    [self dismissViewControllerAnimated:YES completion:^{
-        [PunoRequest nuevoRestaurante:restaurant conBloque:^(BOOL condicion, NSError *error) {
-            if (condicion) {
-                [self.delegate actulizarData];
-            }else{
-                [[[UIAlertView alloc] initWithTitle:@"Parse" message:@"No se pudo guardar el registro en Parse" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
-            }
-        }];
+    [PunoRequest nuevoRestaurante:restaurant conBloque:^(BOOL condicion, NSError *error) {
+        if (condicion) {
+            [self.delegate actulizarData];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }else{
+            [[[UIAlertView alloc] initWithTitle:@"Parse" message:@"No se pudo guardar el registro en Parse" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+        }
     }];
 }
 @end

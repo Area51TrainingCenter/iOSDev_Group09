@@ -27,6 +27,6 @@
 }
 
 - (IBAction)mostrarFoto:(id)sender {
-    NSLog(@"Presionado");
+    [self.delegate mostrarFotoEnGrande:sender];
 }
 @end

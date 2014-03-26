@@ -12,4 +12,5 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSString *foodStyle;
+@property (nonatomic, strong) NSString *foto_link;
 @end
