@@ -9,6 +9,8 @@
 #import "ListaViewController.h"
 #import "NuevoViewController.h"
 
+#import "LocalCell.h"
+
 @interface ListaViewController ()<NuevoViewControllerDelegate>
 @property (nonatomic, strong) NSArray *listaDeRestaurantes;
 @end
@@ -26,6 +28,7 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self actulizarData];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -48,8 +51,11 @@
     return [self.listaDeRestaurantes count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"localCell" forIndexPath:indexPath];
+    //
+    LocalCell *cell = [tableView dequeueReusableCellWithIdentifier:@"localCell" forIndexPath:indexPath];
+    PFObject *bean = [self.listaDeRestaurantes objectAtIndex:indexPath.row];
+    cell.nombre_restaurante.text =[bean objectForKey:@"restaurant_name"];
+    cell.precio_restaurante.text = [bean objectForKey:@"restaurant_address"];
     return cell;
 }
 
