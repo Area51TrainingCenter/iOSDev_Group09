@@ -10,7 +10,7 @@
 #import "NuevoViewController.h"
 
 @interface ListaViewController ()<NuevoViewControllerDelegate>
-
+@property (nonatomic, strong) NSArray *listaDeRestaurantes;
 @end
 
 @implementation ListaViewController
@@ -45,7 +45,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return [self.listaDeRestaurantes count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -62,6 +62,14 @@
 #pragma mark -
 #pragma mark Nuevo View Delegate Method
 - (void)actulizarData{
+    [PunoRequest traerListaDeRestaurantes:^(NSArray *restaurantes, NSError *error) {
+        if (!error) {
+            self.listaDeRestaurantes = restaurantes;
+            [self.tableView reloadData];
+        }else{
+            [[[UIAlertView alloc] initWithTitle:@"Parse" message:@"No se pudo obtener la lista de restaurantes" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+        }
+    }];
     
 }
 @end

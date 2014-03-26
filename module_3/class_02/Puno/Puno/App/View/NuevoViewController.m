@@ -7,6 +7,7 @@
 //
 
 #import "NuevoViewController.h"
+#import "RestauranteBean.h"
 
 @interface NuevoViewController ()
 
@@ -35,8 +36,19 @@
 }
 
 - (IBAction)guardarButton:(id)sender {
+    RestauranteBean *restaurant = [RestauranteBean new];
+    restaurant.name = self.cajaNombre.text;
+    restaurant.address = self.cajaDirección.text;
+    restaurant.foodStyle = self.cajaTipoComida.text;
+    
     [self dismissViewControllerAnimated:YES completion:^{
-        [self.delegate actulizarData];
+        [PunoRequest nuevoRestaurante:restaurant conBloque:^(BOOL condicion, NSError *error) {
+            if (condicion) {
+                [self.delegate actulizarData];
+            }else{
+                [[[UIAlertView alloc] initWithTitle:@"Parse" message:@"No se pudo guardar el registro en Parse" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+            }
+        }];
     }];
 }
 @end
