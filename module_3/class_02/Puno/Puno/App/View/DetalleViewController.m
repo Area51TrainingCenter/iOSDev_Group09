@@ -44,7 +44,19 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)compartirEnFacebook{
-    [[[UIAlertView alloc] initWithTitle:@"Facebook" message:@"Compartir en FB" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        
+        SLComposeViewController *fa = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [fa setInitialText:@"Hola mundo"];
+        [self presentViewController:fa animated:YES completion:nil];
+        
+        
+        NSLog(@"Se encontró");
+    }else{
+        [[[UIAlertView alloc] initWithTitle:@"Facebook" message:@"No se encontro el servicio" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+    }
+    
+    
 }
 - (void)compartirEnTwitter{
     [[[UIAlertView alloc] initWithTitle:@"Twitter" message:@"Compartir en TW" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
