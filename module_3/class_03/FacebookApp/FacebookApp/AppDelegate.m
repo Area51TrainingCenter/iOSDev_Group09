@@ -24,8 +24,17 @@
     [self.window setRootViewController:l];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
+    if ([FBSession activeSession].state == FBSessionStateOpenTokenExtended ) {
+        [FBSession openActiveSessionWithReadPermissions:[NSArray arrayWithObjects:@"basic_info", nil] allowLoginUI:NO completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+            if (!error && status==FBSessionStateOpen) {
+                [self mostrarApp];
+            }else{
+                [self mostrarLogin];
+            }
+        }];
+    }
     return YES;
 }
 

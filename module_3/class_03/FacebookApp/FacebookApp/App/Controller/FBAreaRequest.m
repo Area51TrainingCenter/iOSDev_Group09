@@ -12,6 +12,7 @@
 
 + (void)ingresarAFacebook:(void(^)(BOOL condicion, NSError *error))bloque{
     [FBSession openActiveSessionWithReadPermissions:[NSArray arrayWithObjects:@"basic_info", nil] allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+        
         if (!error) {
             if (status == FBSessionStateOpen) {
                 bloque(YES, nil);
