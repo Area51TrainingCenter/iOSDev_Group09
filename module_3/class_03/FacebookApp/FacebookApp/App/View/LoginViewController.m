@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "FBAreaRequest.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController ()
 
@@ -38,7 +39,8 @@
 - (IBAction)ingresarusandoFBButton:(id)sender {
     [FBAreaRequest ingresarAFacebook:^(BOOL condicion, NSError *error) {
         if (condicion) {
-            
+            AppDelegate *t = [[UIApplication sharedApplication] delegate];
+            [t mostrarApp];
         }else{
             
         }

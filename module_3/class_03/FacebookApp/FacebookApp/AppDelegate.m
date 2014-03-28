@@ -7,8 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "AppViewController.h"
 
 @implementation AppDelegate
+
+
+- (void)mostrarApp{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Facebook" bundle:nil];
+    AppViewController *t = [storyboard instantiateViewControllerWithIdentifier:@"appScene"];
+    [self.window setRootViewController:t];
+}
+- (void)mostrarLogin{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Facebook" bundle:nil];
+    LoginViewController *l = [storyboard instantiateViewControllerWithIdentifier:@"loginScene"];
+    [self.window setRootViewController:l];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
