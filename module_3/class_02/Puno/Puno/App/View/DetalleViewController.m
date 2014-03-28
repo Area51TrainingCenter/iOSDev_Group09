@@ -52,16 +52,21 @@
         
         [fa addImage:[UIImage imageWithData:imageData]];
         [self presentViewController:fa animated:YES completion:nil];
-        
-        
         NSLog(@"Se encontró");
     }else{
         [[[UIAlertView alloc] initWithTitle:@"Facebook" message:@"No se encontro el servicio" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
     }
-    
-    
 }
 - (void)compartirEnTwitter{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        SLComposeViewController *tw = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [tw setInitialText:[NSString stringWithFormat:@"%@ %@",[self.de objectForKey:@"restaurant_name"], [self.de objectForKey:@"restaurant_foto"]]];
+        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[self.de objectForKey:@"restaurant_foto"]]];
+        
+        [tw addImage:[UIImage imageWithData:imageData]];
+        [self presentViewController:tw animated:YES completion:nil];
+    }
+    
     [[[UIAlertView alloc] initWithTitle:@"Twitter" message:@"Compartir en TW" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
 }
 
