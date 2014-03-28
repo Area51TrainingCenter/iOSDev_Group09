@@ -47,7 +47,10 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
         
         SLComposeViewController *fa = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [fa setInitialText:@"Hola mundo"];
+        [fa setInitialText:[NSString stringWithFormat:@"%@ %@",[self.de objectForKey:@"restaurant_name"], [self.de objectForKey:@"restaurant_foto"]]];
+        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[self.de objectForKey:@"restaurant_foto"]]];
+        
+        [fa addImage:[UIImage imageWithData:imageData]];
         [self presentViewController:fa animated:YES completion:nil];
         
         
