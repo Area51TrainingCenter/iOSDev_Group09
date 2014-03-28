@@ -25,6 +25,13 @@
 }
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    UIBarButtonItem *f = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(compartirEnFacebook)];
+    
+    UIBarButtonItem *t = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(compartirEnTwitter)];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:f, t, nil];
+    
     NSLog(@"%@",self.de);
     NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[self.de objectForKey:@"restaurant_foto"]]];
     self.imagenAMostrar.image = [UIImage imageWithData:imageData];
@@ -35,6 +42,12 @@
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void)compartirEnFacebook{
+    [[[UIAlertView alloc] initWithTitle:@"Facebook" message:@"Compartir en FB" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
+}
+- (void)compartirEnTwitter{
+    [[[UIAlertView alloc] initWithTitle:@"Twitter" message:@"Compartir en TW" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil] show];
 }
 
 @end
