@@ -11,7 +11,7 @@
 
 @implementation ServicioRequest
 
-
+#pragma mark -
 #pragma mark Singleton Instance Method
 + (instancetype)sharedInstance{
     static ServicioRequest *t = nil;
