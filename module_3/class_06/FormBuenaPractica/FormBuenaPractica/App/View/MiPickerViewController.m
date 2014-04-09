@@ -35,7 +35,7 @@
 #pragma mark -
 #pragma mark Picker View Data Source Methods
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [self.listaAMostrar count];
+    return 5;//[self.listaAMostrar count];
 }
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
@@ -47,7 +47,7 @@
     [self.delegate pasarElementoSeleccionado:[self.listaAMostrar objectAtIndex:row]];
 }
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [[self.listaAMostrar objectAtIndex:row] objectForKey:@"des"];
+    return @"Area51";//[[self.listaAMostrar objectAtIndex:row] objectForKey:@"des"];
 }
 
 @end

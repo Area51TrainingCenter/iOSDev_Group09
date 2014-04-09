@@ -161,7 +161,7 @@
         <!--Mi Picker View Controller-->
         <scene sceneID="o40-tU-NEB">
             <objects>
-                <viewController id="6fT-VY-fe8" customClass="MiPickerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pickerScene" id="6fT-VY-fe8" customClass="MiPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AIv-20-agW"/>
                         <viewControllerLayoutGuide type="bottom" id="WIW-51-FvD"/>

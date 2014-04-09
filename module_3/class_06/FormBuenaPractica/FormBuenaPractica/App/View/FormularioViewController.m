@@ -12,6 +12,7 @@
 
 @interface FormularioViewController ()<MiToolbarViewControllerDelegate, MiPickerViewControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) MiToolbarViewController *toolbar;
+@property (nonatomic, strong) MiPickerViewController *picker;
 @end
 
 @implementation FormularioViewController
@@ -35,10 +36,19 @@
 
 #pragma mark TextField Delegate Methods
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    
+    //Set toolbar
     self.toolbar = [self.storyboard instantiateViewControllerWithIdentifier:@"toolbarScene"];
     self.toolbar.view.frame = CGRectMake(0, 0, 320, 44);
     self.toolbar.delegate=self;
     [textField setInputAccessoryView:self.toolbar.view];
+    
+    //Set Pickerview
+    self.picker = [self.storyboard instantiateViewControllerWithIdentifier:@"pickerScene"];
+    self.picker.view.frame = CGRectMake(0, 0, 320, 162);
+    self.picker.delegate=self;
+    [textField setInputView:self.picker.view];
+    
     return YES;
 }
 
