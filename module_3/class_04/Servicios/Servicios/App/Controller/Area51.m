@@ -15,9 +15,10 @@
 + (void)buscarItems:(NSDictionary *)params bloque:(void(^)(NSArray *resultado, NSError *error))bloque{
     
     [[ServicioRequest sharedInstance] POST:[AppURL buscarOT] parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-        
+        NSLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
+        NSLog(@"%@",task.response);
+        NSLog(@"%@",error.localizedDescription);
     }];
 }
 @end

@@ -21,4 +21,10 @@
     });
     return t;
 }
+- (instancetype)initWithBaseURL:(NSURL *)url{
+    self = [super initWithBaseURL:url];
+    self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
+    return self;
+    
+}
 @end

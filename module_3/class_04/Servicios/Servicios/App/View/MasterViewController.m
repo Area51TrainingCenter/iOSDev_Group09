@@ -47,9 +47,11 @@
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@"03", @"idTaller", tipo, @"tipoBusqueda",[tipo integerValue]==1?self.cajaBuscar.text:@"", @"placa", [tipo integerValue]==2?self.cajaBuscar.text:@"", @"vin", [tipo integerValue]==3?self.cajaBuscar.text:@"", @"OT",nil];
     
     [Area51 buscarItems:param bloque:^(NSArray *resultado, NSError *error) {
+        UITextField *t;
         
     }];
     
     NSLog(@"%@",param);
+    
 }
 @end
