@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FormularioViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextField *txtDepartamento;
+@property (weak, nonatomic) IBOutlet UITextField *txtProvincia;
+@property (weak, nonatomic) IBOutlet UITextField *txtDistrito;
 
 @end

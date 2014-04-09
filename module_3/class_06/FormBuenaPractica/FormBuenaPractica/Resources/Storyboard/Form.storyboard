@@ -105,6 +105,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Formulario" id="6di-LF-oNX"/>
+                    <connections>
+                        <outlet property="txtDepartamento" destination="BeG-bz-8TS" id="z3Q-PS-g8f"/>
+                        <outlet property="txtDistrito" destination="Qc8-5p-v3P" id="5EW-ZI-1QW"/>
+                        <outlet property="txtProvincia" destination="fH3-pj-Kot" id="fAa-h7-gf9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRf-1h-gPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,12 +133,12 @@
                                 <items>
                                     <barButtonItem title="&lt;" id="ryH-qh-ILh">
                                         <connections>
-                                            <action selector="adelanteButton:" destination="EeZ-sG-6Oz" id="1ER-g5-HjY"/>
+                                            <action selector="atrasButton:" destination="EeZ-sG-6Oz" id="FPx-8T-Tb6"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem title=">" id="hZG-gW-V0m">
                                         <connections>
-                                            <action selector="atrasButton:" destination="EeZ-sG-6Oz" id="Ope-dF-MWp"/>
+                                            <action selector="adelanteButton:" destination="EeZ-sG-6Oz" id="EIE-Z1-zUw"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="20" style="plain" systemItem="flexibleSpace" id="IIT-nK-X83"/>
