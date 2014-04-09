@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MiPickerViewController : UIViewController
+@protocol MiPickerViewControllerDelegate <NSObject>
+- (void)pasarElementoSeleccionado:(NSDictionary *)item;
+@end
 
+@interface MiPickerViewController : UIViewController
+@property (nonatomic, weak) id<MiPickerViewControllerDelegate> delegate;
+@property (nonatomic, strong) NSArray *listaAMostrar;
 @end

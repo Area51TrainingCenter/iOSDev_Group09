@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MiToolbarViewControllerDelegate <NSObject>
+- (void)pasarhaciaatras;
+- (void)pasarhaciaadelante;
+- (void)pasarcerrar;
+@end
+
 @interface MiToolbarViewController : UIViewController
+@property (nonatomic, weak) id<MiToolbarViewControllerDelegate> delegate;
+- (IBAction)adelanteButton:(id)sender;
+- (IBAction)atrasButton:(id)sender;
+- (IBAction)cerrarButton:(id)sender;
 
 @end
