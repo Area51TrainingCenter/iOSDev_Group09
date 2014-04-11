@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="C7e-cX-1NG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="D1L-gK-wmB">
+            <objects>
+                <viewController id="ZCy-e3-1ZO" customClass="MasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Un-nz-1Qd"/>
+                        <viewControllerLayoutGuide type="bottom" id="wRk-B2-PQL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s81-e5-a8n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="manzana.png" translatesAutoresizingMaskIntoConstraints="NO" id="FGA-zN-p4w">
+                                <rect key="frame" x="84" y="78" width="103" height="103"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KwB-og-ksp" appends="YES" id="2Xt-br-nHl"/>
+                                    <outletCollection property="gestureRecognizers" destination="nuU-OI-smP" appends="YES" id="P1W-OO-Lbu"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="android.png" translatesAutoresizingMaskIntoConstraints="NO" id="g60-DX-4X0">
+                                <rect key="frame" x="93" y="410" width="113" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rjq-o5-OQc" appends="YES" id="ZkL-y6-OOA"/>
+                                    <outletCollection property="gestureRecognizers" destination="ZH3-Jr-od5" appends="YES" id="Vzj-C2-pUZ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xlc-gA-WXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KwB-og-ksp">
+                    <connections>
+                        <action selector="manejarTap:" destination="ZCy-e3-1ZO" id="I3t-Dh-nn5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="rjq-o5-OQc">
+                    <connections>
+                        <action selector="manejarSwipe:" destination="ZCy-e3-1ZO" id="PLv-QW-fcA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nuU-OI-smP">
+                    <connections>
+                        <action selector="manejarPan:" destination="ZCy-e3-1ZO" id="6I2-cV-GlU"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="ZH3-Jr-od5">
+                    <connections>
+                        <action selector="manejarRotacion:" destination="ZCy-e3-1ZO" id="EZ9-xd-nm4"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-414" y="-36"/>
+        </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="Oed-nd-8CS">
+            <objects>
+                <viewController id="C7e-cX-1NG" customClass="MapaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bbd-E5-WnL"/>
+                        <viewControllerLayoutGuide type="bottom" id="5W7-1R-qv9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REx-22-g56">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yW3-DU-DVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="android.png" width="225" height="225"/>
+        <image name="manzana.png" width="207" height="206"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
